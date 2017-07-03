@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 한동 블로그 오픈!
 ---
 
