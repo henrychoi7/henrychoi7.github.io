@@ -1,4 +1,4 @@
-# Hyde
+# 한동 블로그
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
@@ -109,7 +109,6 @@ Hyde has two branches, but only one is used for active development.
 **Mark Otto**
 - <https://github.com/mdo>
 - <https://twitter.com/mdo>
-
 
 ## License
 
