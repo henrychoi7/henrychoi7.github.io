@@ -4,12 +4,13 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
+relative_permalinks: true
 
 # Setup
 title:            Handong
 tagline:          'Blog'
 description:      '현재 블로그 공사 중입니다. <a href="https://www.facebook.com/handongchoi" target="_blank">@handongchoi</a> 감사합니다.'
-url:              http://hyde.getpoole.com
+url:              http://handongchoi.com
 baseurl:          /
 
 author:
