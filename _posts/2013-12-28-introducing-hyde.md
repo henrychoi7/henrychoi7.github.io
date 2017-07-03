@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Hyde
+title: Introducing Handong's Blog
 ---
 
 ### 공지사항
