@@ -6,15 +6,15 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            Handong Choi
+title:            Handong
 tagline:          'Blog'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      '현재 블로그 공사 중입니다. <a href="https://www.facebook.com/handongchoi" target="_blank">@handongchoi</a> 감사합니다.'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Handong Choi'
+  url:            https://www.facebook.com/handongchoi
 
 paginate:         5
 paginate_path:    "page:num"
@@ -23,7 +23,7 @@ paginate_path:    "page:num"
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/henrychoi7
 
 # Gems
 gems:             [jekyll-paginate, jekyll-gist]
