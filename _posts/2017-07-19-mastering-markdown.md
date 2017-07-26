@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Mastering Markdown
+title: [GitHub] Mastering Markdown
 ---
+
+오늘은 GitHub의 Mastering Markdown을 실습해 보았다.
 
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
