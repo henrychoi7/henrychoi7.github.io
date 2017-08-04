@@ -9,14 +9,14 @@ permalink:        pretty
 title:            Handong
 tagline:          'Blog'
 description:      '<a href="https://www.facebook.com/handongchoi" target="_blank">촨동</a>의 블로그'
-url:              http://handongchoi.com
+url:              https://handongchoi.com
 baseurl:          /
 
 author:
   name:           'Handong Choi'
   url:            https://www.facebook.com/handongchoi
 
-paginate:         5
+paginate:         2
 paginate_path:    "page:num"
 
 # Custom vars
