@@ -42,7 +42,7 @@ PE 파일을 공부하는 것은 PE 헤더 구조체 그 자체를 공부하는 
 PE 포맷의 시작 부분에 위치한 40바이트인 구조체인 DOS Header와 Stub은 Windows가 아닌 DOS 운영체제를 위한 것이며 DOS에서 PE 파일이 실행되는 경우를 위해 만들어진 것이다. 하지만, 요즘 DOS를 사용하는 경우가 거의 없고 헤더 내용도 대부분 지금 사용하지 않는다.
 
 <br>
-```
+```c
 typedef struct IMAGE_DOS_HEADER {  // DOS Header
   WORD e_magic;                   // Magic Number
   WORD e_cblp;
@@ -68,7 +68,7 @@ typedef struct IMAGE_DOS_HEADER {  // DOS Header
 
 Image_NT_Headers는 NT 헤더임을 나타내는 시그니처인 "*P E 0 0*" 4바이트를 시작으로, FileHeader와 OptionalHeader를 멤버로 가지는 구조체다.
 
-```
+```c
 typedef struct _IMAGE_NT_HEADERS {
   DWORD Signature;
   IMAGE_FILE_HEADER FileHeader;
@@ -94,7 +94,7 @@ typedef struct _IMAGE_FILE_HEADER {
 
 아래는 WinNT.h 에 정의된 Characteristics 값이며 최종 값은 해당되는 속성들의 OR 값으로 표시한다.
 
-```
+```c
 #define IMAGE_FILE_RELOCS_STRIPPED      0x0001
 #define IMAGE_FILE_EXECUTABLE_IMAGE     0x0002
 // File is executable
@@ -113,7 +113,7 @@ typedef struct _IMAGE_FILE_HEADER {
   - **Image_Optional_Header**
 <br>
 
-```
+```c
 typedef struct _IMAGE_OPTIONAL_HEADER {
   WORD Magic;                           // Image_Optional_Header32인지 64인지를 구분
   ...
@@ -146,7 +146,7 @@ DataDirectory는 16개의 구조체 배열로 이루어져 있으며 디렉토�
 
 섹션은 실제 파일의 내용들이 존재하는 부분으로, 각 섹션 별로 섹션의 정보를 담고 있는 헤더를 가지고 있다.
 
-```
+```c
 typedef struct _IMAGE_SECTION_HEADER {
   BYTE Name[IMAGE_SIZEOF_SHORT_NAME];
   union {
@@ -163,7 +163,7 @@ typedef struct _IMAGE_SECTION_HEADER {
 
 마지막으로 Characteristics는 각 섹션의 특징을 알려준다.
 
-```
+```c
 #define IMAGE_SCN_CNT_CODE                0x00000020
 // Section contains code.
 #define IMAGE_SCN_CNT_INITIALIZED_DATA    0x00000040
