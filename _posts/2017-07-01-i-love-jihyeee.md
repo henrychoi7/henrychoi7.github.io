@@ -1,10 +1,10 @@
 ---
 layout: post
-title: JIHYEEE
+title: Jihye and Handong
 ---
 
-### 지혜지혜
+### 지혜 & 한동
 <br>
 
-* 23살 여자아이
-* [@jihyekim](https://www.facebook.com/profile.php?id=100000834978545&fref=ts)
+* [@JihyeKim](https://www.facebook.com/profile.php?id=100000834978545&fref=ts)
+* [@HandongChoi](https://www.facebook.com/handongchoi)

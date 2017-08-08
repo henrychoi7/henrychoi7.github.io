@@ -7,6 +7,6 @@ title: Introducing Handong's Blog
 <br>
 
 * 현재 블로그 공사 중입니다.
-* 문의는 [@handongchoi](https://www.facebook.com/handongchoi)로 주세요.
+* 문의는 [@HandongChoi](https://www.facebook.com/handongchoi)로 주세요.
 
 Thanks!
