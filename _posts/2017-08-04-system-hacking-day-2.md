@@ -29,7 +29,7 @@ OCX | 라이브러리(ActiveX)
 SYS | 시스템 드라이버
 OBJ | 오브젝트 파일
 
-PE 파일을 공부하는 것은 PE 헤더 구조체 그 자체를 공부하는 것이라 할 수 있다. PE 파일은 파일에 존재할 때의 구조와 메모리에 로드된 후의 모습이 달라지는데, **파일** 에서는 첫 바이트부터의 거리를 뜻하는 *offset* 을 사용하고, **메모리** 에서는 VA(*Virtual Address*, 가상 주소)와 RVA(*Relative Virtual Address*, 상대적 가상 주소)를 사용한다.
+PE 파일을 공부하는 것은 PE 헤더 구조체 그 자체를 공부하는 것이라 할 수 있다. PE 파일은 파일에 존재할 때의 구조와 메모리에 로드된 후의 모습이 달라지는데, **파일** 에서는 첫 바이트부터의 거리를 뜻하는 *offset* 을 사용하고, **메모리** 에서는 VA(*Virtual Address, 가상 주소*)와 RVA(*Relative Virtual Address, 상대적 가상 주소*)를 사용한다.
 
 > 고정 주소 대신 상대 주소를 사용하는 이유는 PE 파일이 메모리에 로드될 때 한 주소에 고정적으로 로딩되는 것이 아니기 때문이다.
 
@@ -80,7 +80,7 @@ typedef struct _IMAGE_NT_HEADERS {
   - **FileHeader**
 <br>
 
-```
+```c
 typedef struct _IMAGE_FILE_HEADER {
   WORD Machine;                     // 이 파일의 실행 대상 플랫폼(Intel386, Intel64, ARM 등)
   WORD NumberOfSections;            // 이 파일에 존재하는 섹션의 수

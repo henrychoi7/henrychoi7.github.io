@@ -44,7 +44,7 @@ SW에는 다양한 버그들이 존재한다. 이러한 버그들 중에는 단�
 <br>
 
 Memory Corruption 취약점은 버그로 인한 메모리 오염, 즉 예상되지 않은 메모리 값 변경이나 참조 등에 의해 발생한다.
-원인은 대부분 안전하지 않은 함수의 사용, 잘못된 함수 사용 등 프로그래밍 실수로 인해 발생하며 BufferOverflow 취약점 또한 이 취약점 종류다.
+원인은 대부분 안전하지 않은 함수의 사용, 잘못된 함수 사용 등 프로그래밍 실수로 인해 발생하며 Buffer Overflow 취약점 또한 이 취약점 종류다.
 
 <br>
 - **Stack Buffer Overflow**
@@ -67,7 +67,7 @@ strncpy(buf, argv[1], len); // 문자열 길이가 20을 넘을 시 BOF 발생
 이처럼 메모리 복사, 문자열 복사함수는 반드시 정확한 검증을 거친 후에 수행하도록 해야 한다.
 
 <br>
-- **Headp Buffer Overflow**
+- **Heap Buffer Overflow**
 <br>
 
 스택 버퍼 오버플로우와 비슷하나 그 대상이 힙 메모리다. 또한 메모리 구조가 다르므로 취약점 공격 기법도 다르다.
@@ -155,14 +155,14 @@ char * ptr = null;
 ## [질문 내용 정리]
 <br>
 
-1. PE 섹션 헤더 속성 중 IMAGE_SCN_MEM_SHARED 의미
+- **PE 섹션 헤더 속성 중 IMAGE_SCN_MEM_SHARED 의미**
 
 이 속성을 가진 섹션은 메모리에서 다른 프로세스와 공유할 수 있다. 값은 0x10000000이다.
 
-2. IMAGE_SECTION_HEADER 구조체 내 멤버 변수 중 PointerToRawData offset?
+- **IMAGE_SECTION_HEADER 구조체 내 멤버 변수 중 PointerToRawData offset?**
 
 PointerToRawData는 파일에서 각 섹션의 시작 위치를 나타낸다. 즉, code/data가 파일의 어디에 있는지 알려주는 변수다.
 
-3. 세그먼테이션(Segmentation)과 페이징(Paging) 기법
+- **세그먼테이션(Segmentation)과 페이징(Paging) 기법**
 
 보통 인텔 프로세서에서 지원하는 메모리 관리 기법은 세그먼테이션과 페이징이다. 세그먼테이션과 페이징은 주소 공간을 특정 영역으로 나눈다는 공통점이 있지만, 나누는 방식에서 차이가 있다. 세그먼테이션은 전체 영역을 원하는 크기로 나누어 관리하는 방식이고, 페이징은 일정한 단위로 잘라진 조각을 모아 원하는 크기로 관리하는 방식이다.
