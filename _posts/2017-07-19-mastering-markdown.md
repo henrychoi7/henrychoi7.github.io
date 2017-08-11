@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [GitHub] Mastering Markdown
+title: GitHub Mastering Markdown
 ---
 
 # [GitHub] 마크다운 실습하기
