@@ -11,7 +11,7 @@ title: Profile
 <br>
 
 <p style="text-align:center;">
-  <img src="/profile.jpg" width="40%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/profile.JPG" width="40%">
 </p>
 
 <br>
@@ -64,7 +64,7 @@ title: Profile
   - 육군 3군단 CERT로 복무 및 병장 만기 전역
   - PC, 네트워크 장비의 취약점 점검, 분석 및 사이버 침해사고대응 임무 수행
 
-### 스마트그리드 보안 해커톤
+### 스마트그리드 보안 해커톤 / Smart Grid Security Hackathon
 > *2016*
 
 - **스마트그리드 보안 교육 3차 과정**
@@ -73,7 +73,7 @@ title: Profile
   - 2일차 : 빅데이터 분석 모니터링 솔루션 Splunk 와 웹 보안 취약점 진단 도구 PT Application Inspector 로 취약점 탐지 및 분석, 결과 보고서 생성
   - 3일차 : 소스코드 보안 취약점 검증 도구인 CodeSonar 로 버퍼 오버플로우 공격의 원인 분석과 통신 프로토콜 취약점 탐지 도구 beSTORM 으로 네트워크 모듈, 파일 모듈, API 모듈 별로 취약점 분석 실습
 
-### SUA
+### SUA (SecurityPlus Union Academy)
 > *2016*
 
 - **주요정보통신기반시설 취약점 진단 및 보안 교육과정**
@@ -81,7 +81,7 @@ title: Profile
   - 최신 정보보호 동향 파악 후 취약점 분석/평가 가이드를 참고하여 리눅스와 윈도우 OS 웹 서버 취약점 분석
   - Kali Linux 와 CVE-2016-0189 Drive-by download 취약점을 이용해 윈도우 OS 로부터 Reverse Connection 을 얻는 공격을 실습
 
-### 2016 가천대학교 해커톤
+### 2016 가천대학교 해커톤 / 2016 Gachon Univ. Hackathon
 > *2016*
 
 - **2016 가천대학교 해커톤 교육**
