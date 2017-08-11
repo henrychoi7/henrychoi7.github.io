@@ -1,10 +1,9 @@
 ---
 layout: post
-title: System Hacking by SUA Day 3
+title: SUA 시스템 해킹 스터디
 ---
 
-# SUA 시스템 해킹 스터디 170811
-<br>
+### 170811
 
 이번 시간에는 Exploit 분류에 대해 알아보겠다.
 

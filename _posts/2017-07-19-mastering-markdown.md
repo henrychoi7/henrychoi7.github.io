@@ -3,8 +3,7 @@ layout: post
 title: GitHub Mastering Markdown
 ---
 
-# [GitHub] 마크다운 실습하기
-<br>
+### [GitHub] 마크다운 실습하기
 
 오늘은 GitHub의 Mastering Markdown을 실습해 보았다.
 

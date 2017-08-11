@@ -1,10 +1,9 @@
 ---
 layout: post
-title: System Hacking by SUA Day 2-1
+title: SUA 시스템 해킹 스터디
 ---
 
-# SUA 시스템 해킹 스터디 170804 (이어서)
-<br>
+### 170804 (이어서)
 
 지난 PE 파일 구조에 이어 이번에는 각종 SW 취약점과 분류 형태를 알아보겠다.
 

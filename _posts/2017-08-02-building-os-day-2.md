@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Building OS Day 2
+title: 64비트 멀티코어 OS 만들기
 ---
 
-# 64비트 멀티코어 OS 만들기 2
-<br>
+### 170802
 
+<br>
 ## 운영 모드
 <br>
 

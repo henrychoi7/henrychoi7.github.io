@@ -1,10 +1,9 @@
 ---
 layout: post
-title: System Hacking by SUA Day 1
+title: SUA 시스템 해킹 스터디
 ---
 
-# SUA 시스템 해킹 스터디 170728
-<br>
+### 170728
 
 SUA 운영진 활동 중 회원들과 같이 시스템 해킹 스터디를 진행하기로 했다. 시스템 해킹의 기초를 탄탄히 공부해야 나중에 Exploit 코드를 작성하고, Pwnable 문제를 푸는 데 어려움이 없기 때문이다.
 
