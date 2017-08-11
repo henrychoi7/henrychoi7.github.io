@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Building OS] Day 1
+title: Building OS Day 1
 ---
 
 # 64비트 멀티코어 OS 만들기

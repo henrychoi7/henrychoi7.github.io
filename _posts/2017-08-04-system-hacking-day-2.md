@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [System Hacking by SUA] Day 2
+title: System Hacking by SUA Day 2
 ---
 
 # SUA 시스템 해킹 스터디 170804
