@@ -195,6 +195,37 @@ a.join('abcd')
 'a,b,c,d'
 # 문자열의 각각의 문자 사이에 변수 a의 값 삽입
 
+a = "hi"
+a.upper()
+'HI'
+# 소문자를 대문자로 바꾸기
 
+a = "HI"
+a.lower()
+'hi'
+# 대문자를 소문자로 바꾸기
 
+a = " hi "
+a.lstrip()
+'hi '
+a.rstrip()
+' hi'
+a.strip()
+'hi'
+# 왼쪽 공백 지우기, 오른쪽 공백 지우기, 양쪽 공백 지우기
+
+a = "Hello World"
+a.replace("Hello", "My")
+'My World'
+# 문자열 바꾸기
+
+a = "Hello World"
+a.split()
+['Hello', 'World']
+# split 괄호 안에 아무런 값을 안 넣으면 공백을 기준으로 문자열을 나눈다. 하지만 특정한 값이 있을 경우, 괄호 안의 값을 구분자로 해서 문자열을 나눈다.
+a = "a:b:c:d"
+a.split(':')
+['a', 'b', 'c', 'd']
 ```
+
+(*다음에 계속!*)
