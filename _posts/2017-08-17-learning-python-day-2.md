@@ -175,12 +175,17 @@ t5 = ('a', 'b', ('ab', 'cd'))
 ```python
 t1 = (1, 2, 'a', 'b')
 del t1[0]
+```
+```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object doesn't support item deletion
-
+```
+```python
 t1 = (1, 2, 'a', 'b')
 t1[0] = 'c'
+```
+```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment

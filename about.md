@@ -11,7 +11,7 @@ title: About
 
 ### Contacts
 
-블로그 외 기타 문의사항 또는 저와의 개인적으로 연락이 필요하시다면 아래 연락처를 이용해 주세요.
+블로그 외 기타 문의사항 또는 저와 개인적으로 연락이 필요하시다면 아래 연락처를 이용해 주세요.
 
 E-mail: <a href="http://www.google.com/recaptcha/mailhide/d?k=01AMQA4ro5rediCRoyfJ9UfQ==&amp;c=_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01AMQA4ro5rediCRoyfJ9UfQ\x3d\x3d\x26c\x3d_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">w...</a>@gmail.com
 
