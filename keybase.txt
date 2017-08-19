@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/handongchoi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://handongchoi.com
+  * I am handongchoi (https://keybase.io/handongchoi) on keybase.
+  * I have a public key with fingerprint F320 04D1 3809 E5E3 F692  BD79 4D97 8E1B 7582 6DDF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012025e6bf7dde12ff3ab722f3bd3bc46961e5fc23af00a2c72efb1593a2090a5b670a",
+      "fingerprint": "f32004d13809e5e3f692bd794d978e1b75826ddf",
+      "host": "keybase.io",
+      "key_id": "4d978e1b75826ddf",
+      "kid": "01015df2e46096480c8962d0852c480d5886f3e853331fa7ea7961784b0aa3b93ebd0a",
+      "uid": "c80f0c5e85a0a46c48f1da3b6cd7fa19",
+      "username": "handongchoi"
+    },
+    "service": {
+      "hostname": "handongchoi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1503155395,
+  "expire_in": 157680000,
+  "prev": "227ed301de2c403a775966656bee3a272ccd28e66a0283254f2ddcfa3cb522b1",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMNrAnicbZJ7UFRVHMcXeVPxNHuA08xNIhyic8/Zcx87YMkzR1GZAaclarv3nnPZ
+K7C77AOhFRmkBqNATaUIJYYcygZrNEwanVnArQyoYBRXZzStKQnMnlhKMnWXyb/q
+/HPmd36f3/d8f79z/PeEGmJCil5vT/Zsr74cMjZ8wGMwv1FyysvIdlLPmLxMJV3c
+aBWhLrelUiOMiQEsBBBTTlZ5QigLVRVJMg+himSCZMXIiRxLsapAJKkASFDhIVVl
+FotIgkAEEpY5HkhMBqNqtgrqdDg1m1uXVREEwEhYJACRYopUToQy4UUjEXmBsjKP
+BcgRouqFVrsrWKGbkyUXzdTs+pkeWBbt/Q9/xzdgMVEhNXJA5IwCUASRgwQIGCp6
+RLAgcCqiAkYIsarEU4nXO+EFowwkCckiojJZ9O1ZlFMEoAIF67wEJCOnS6gs0TlO
+IbwqsWIQdFGnTaqmOm2VbMRuq1Csdo1pyGD0RK2m0OBsg838F8pU7NW6gsNpd9sV
+e1Uw6XY7XKZgsbveEaS3UNnyr45F1mxEn6ZeUUudLs1uY0ysTipuLSjMYoBYjJGI
+Mxha59Cc1KIFCcxzAtBX8B5aq0tCyFOCAEuoPhKAJJ7HIsdxmJMp1V+Ph4pCoEA5
+TgJQQBAbVUiIokpIkTGEMssEO6ux2RkTp9uUKnRJl1Zhk9weJ2UaRobLwwwhMYaI
+8CXBX2aIiY6/8/e6+HjDeGL26LaatqTDKe9sCo/860mveS267vCnL8c/4+kVw/3R
+M2dLa2ZKzd9tPsZm3x2oFC6EuPy7L63p6MxKuJSv9s1MWC4uJD2k7SxwNQjuvCqc
+XNc6CUazPum98f6+6abYjqvLfLfys80Z6K6jaPy9xH2PtL3Y/stM4/NDZwyrttQ8
+t/L3Qmvlsyt98TuO1DDDx3NXRIywauz+p3yx05PT7riwkfQcR4chLvDwubDHha/g
+ZPH49VbjYTbppQPLSzZvGmSVhv5rjfzkhiUdzv4fWne94Jwt2z3YOZdQlnVfz362
+68eEQA77zICp/eu+2O7Z8vnBfMf9jzm2vRse3Rm+kPqh0Vx0ZqxjT8Hf51Hz1twr
+rbFKwfY3N/w68cATxYH55OiwpbdvJp61FuG8GLa7YWNLU1SVtCvP7I9MbUfu2ae/
+jX+w8fP5T6d6Ivce2pHu23m6Zf4Vw43iZR+kTQ3OrT9X1fubt/GC62Vc+oe3aaMv
+/LLyaGKamG4eKz89f3ztZ9/0mF/ru9ocUbuQggpXdQ5d5ANlmQfv9TUP+EPjDv5k
+8rfkr45Mv9WZ2mNsCUx4Ppp6Kyp06Muj1pNO8wAwfLE0/tpEys0Tf9K0Y6tHo0oc
+3nWVW42FuW6H4SSZOZQTum7OQF71dNfPe08t2bumN63tdnFBVl3TyJ4ryRVvr/84
+6fyRE7Yux/f/AEgVt8g=
+=+mYP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/handongchoi
+
+==================================================================

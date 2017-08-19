@@ -3,10 +3,6 @@ layout: page
 title: Resume
 ---
 
-<p class="message">
-  블로그 공사 중입니다. 블로그 테마 바꾸고 다시 정리할 예정입니다.
-</p>
-
 # 최한동 / Handong Choi
 <br>
 
