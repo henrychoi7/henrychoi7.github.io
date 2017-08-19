@@ -20,3 +20,9 @@ KakaoTalk: @MrHiD
 [Facebook](https://www.facebook.com/handongchoi)
 
 [LinkedIn](https://www.linkedin.com/in/henrychoi7/)
+
+[Google+](https://plus.google.com/+HandongChoi)
+
+[HackerOne](https://hackerone.com/henrychoi7)
+
+[PacketStorm](https://packetstormsecurity.com/user/henrychoi7/)
