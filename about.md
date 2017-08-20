@@ -14,23 +14,15 @@ title: About
 
 블로그 외 기타 문의사항 또는 저와 개인적으로 연락이 필요하시다면 아래 연락처를 이용해 주세요.
 
-<p class="message">
-  **E-mail**: <a href="http://www.google.com/recaptcha/mailhide/d?k=01AMQA4ro5rediCRoyfJ9UfQ==&amp;c=_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01AMQA4ro5rediCRoyfJ9UfQ\x3d\x3d\x26c\x3d_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">w...</a>@gmail.com<br>
+**E-mail**: <a href="http://www.google.com/recaptcha/mailhide/d?k=01AMQA4ro5rediCRoyfJ9UfQ==&amp;c=_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01AMQA4ro5rediCRoyfJ9UfQ\x3d\x3d\x26c\x3d_vNrD0gO9kXQTQTVp32UsUXB_FOQ5p02yelVujYD_dQ\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">w...</a>@gmail.com<br>
+**KakaoTalk**: @MrHiD<br>
 
-  **KakaoTalk**: @MrHiD<br>
-
-  [**Facebook**](https://www.facebook.com/handongchoi)<br>
-
-  [**LinkedIn**](https://www.linkedin.com/in/henrychoi7/)<br>
-
-  [**Google+**](https://plus.google.com/+HandongChoi)<br>
-
-  [**HackerOne**](https://hackerone.com/henrychoi7)<br>
-
-  [**PacketStorm**](https://packetstormsecurity.com/user/henrychoi7/)<br>
-
-  [**Keybase**](https://keybase.io/handongchoi)<br>
-</p>
+[**Facebook**](https://www.facebook.com/handongchoi)<br>
+[**LinkedIn**](https://www.linkedin.com/in/henrychoi7/)<br>
+[**Google+**](https://plus.google.com/+HandongChoi)<br>
+[**HackerOne**](https://hackerone.com/henrychoi7)<br>
+[**PacketStorm**](https://packetstormsecurity.com/user/henrychoi7/)<br>
+[**Keybase**](https://keybase.io/handongchoi)<br>
 
 <br>
 ### PGP
@@ -39,7 +31,7 @@ title: About
 
 **Key**: 77a7105fa9248e40<br>
 **Key Fingerprint**: 40864cb9fe9690232815bd3077a7105fa9248e40
-
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsFNBFmYTm0BEADdFq1UPhs9g26WrsLV/FcKvwFP+JYvPN+kFhOtP8j3x3ekcGiC
@@ -117,3 +109,4 @@ s50oakcKxmOZkLcRw9rYIJCY07F8BxT4ZSGx1qHsbSp4Mg67Vq6R/6U4RW8cNjia
 =eDCr
 
 -----END PGP PUBLIC KEY BLOCK-----
+```
