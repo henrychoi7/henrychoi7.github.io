@@ -3,7 +3,7 @@ layout: page
 title: Resume
 ---
 
-# 최한동 / Handong Choi
+## 최한동 / Handong Choi
 <br>
 
 <p style="text-align:center;">
@@ -12,14 +12,13 @@ title: Resume
 
 <br>
 ## Education & Military Service
-<br>
 
 ### 분당고등학교 / Bundang High School
 > *2009~2012*
 
 - **활동**
-  - 지역과학영재교육원 입학 후 교육 이수 및 과학동아리 FOCUS 활동
-  - 교내 과학 저널에 거대입자가속기(*CERN*)와 블랙홀에 관한 글 기고 (*2010*)
+  - 지역과학영재교육원 입학 후 교육 이수 및 Hands-on-Science, FOCUS 과학동아리 활동
+  - 교내 과학 저널 Future에 거대입자가속기(*CERN*)와 블랙홀에 관한 글 기고 (*2010*)
 
 ### 가천대학교 / Gachon University
 - **컴퓨터공학과 / Computer Engineering**
@@ -69,7 +68,6 @@ title: Resume
 
 <br>
 ## Work & Project
-<br>
 
 - **수상 이력 / Honor & Awards**
   - 제 9회 해킹캠프 Quiz & CTF 1위 (*2014*)
@@ -95,20 +93,20 @@ title: Resume
 
 <br>
 ## Leadership & Activities
-<br>
 
 - **SUA(SecurityPlus Union Academy)**
   - 작성 중
 
 <br>
 ## Skills & Certification
-<br>
 
 - **기술 및 능력 / Skills**
   - 작성 중
 
 - **자격증 / Certificates**
-  - 작성 중
+  - CCNA(*Cisco Certified Network Associate*)
+  - [정보보안산업기사](https://kisq.or.kr/)
+  - [Rising Star](https://topcontributor.withgoogle.com/about?hl=en-US) @ Google Product Forums (*Korean*)
 
 <br>
 *(계속 업데이트 중)*
