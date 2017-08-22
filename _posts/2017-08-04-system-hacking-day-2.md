@@ -9,13 +9,11 @@ title: SUA 시스템 해킹 스터디
 
 <br>
 ## 윈도우 실행 파일 구조
-<br>
 
 윈도우 해킹을 하기 위해서는 당연히 윈도우 실행 파일 구조를 알아야 한다.
 
 <br>
 ### 1. PE 파일
-<br>
 
 윈도우 실행 파일을 PE(*Portable Executable*) 파일이라 부른다. PE는 다양한 정보를 가진 커다란 구조체들로 이루어져 있으며, 내부에 수많은 테이블과 멤버들을 가지고 있다.
 
@@ -36,7 +34,6 @@ PE 파일을 공부하는 것은 PE 헤더 구조체 그 자체를 공부하는 
 
 <br>
 - **Image_DOS_Header와 DOS Stub**
-<br>
 
 PE 포맷의 시작 부분에 위치한 40바이트인 구조체인 DOS Header와 Stub은 Windows가 아닌 DOS 운영체제를 위한 것이며 DOS에서 PE 파일이 실행되는 경우를 위해 만들어진 것이다. 하지만, 요즘 DOS를 사용하는 경우가 거의 없고 헤더 내용도 대부분 지금 사용하지 않는다.
 
@@ -63,7 +60,6 @@ typedef struct IMAGE_DOS_HEADER {  // DOS Header
 
 <br>
 - **Image_NT_Headers**
-<br>
 
 Image_NT_Headers는 NT 헤더임을 나타내는 시그니처인 "*P E 0 0*" 4바이트를 시작으로, FileHeader와 OptionalHeader를 멤버로 가지는 구조체다.
 
@@ -77,7 +73,6 @@ typedef struct _IMAGE_NT_HEADERS {
 
 <br>
   - **FileHeader**
-<br>
 
 ```c
 typedef struct _IMAGE_FILE_HEADER {
@@ -110,7 +105,6 @@ typedef struct _IMAGE_FILE_HEADER {
 
 <br>
   - **Image_Optional_Header**
-<br>
 
 ```c
 typedef struct _IMAGE_OPTIONAL_HEADER {
@@ -141,7 +135,6 @@ DataDirectory는 16개의 구조체 배열로 이루어져 있으며 디렉토�
 
 <br>
 - **Section Header**
-<br>
 
 섹션은 실제 파일의 내용들이 존재하는 부분으로, 각 섹션 별로 섹션의 정보를 담고 있는 헤더를 가지고 있다.
 

@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Handong
 tagline:          'Blog'
-description:      '<a href="https://www.facebook.com/handongchoi" target="_blank">촨동</a>의 블로그'
+description:      '<a href="https://handongchoi.com/resume/" target="_blank">촨동</a>의 블로그'
 url:              https://handongchoi.com
 baseurl:          /
 
@@ -16,7 +16,7 @@ author:
   name:           'Handong Choi'
   url:            https://www.facebook.com/handongchoi
 
-paginate:         5
+paginate:         1
 paginate_path:    "/page:num/"
 
 # Custom vars

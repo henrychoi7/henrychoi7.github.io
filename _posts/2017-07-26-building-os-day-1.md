@@ -9,7 +9,6 @@ title: 64비트 멀티코어 OS 만들기
 
 <br>
 ## GCC 설치
-<br>
 
 GCC(GNU Compiler Collection)란, 무료로 사용할 수 있는 컴파일러 관련 프로그램의 집합이다. 나는 OS X 운영체제를 사용 중이므로, [Cygwin](https://www.cygwin.com/)(윈도우에서 리눅스 같은 환경을 만들어 주는 것)을 사용하지 않겠다.
 
@@ -43,13 +42,11 @@ int main(int argc, char** argv)
 
 <br>
 ## NASM 설치
-<br>
 
 NASM(The Netwide Assembler)는 윈도우와 리눅스 등 다양한 플랫폼을 지원하는 어셈블러다. 리눅스 운영체제에서 `sudo apt-get install nasm` 명령어를 입력하면 설치된다. 설치가 끝나면 `nasm -version` 명령어를 실행하여 설치가 제대로 됐는 지 확인해 보자.
 
 <br>
 ## QEMU 설치
-<br>
 
 QEMU는 오픈 소스 프로세서 에뮬레이터로 다양한 종류의 프로세서를 소프트웨어적으로 구현한 프로그램이다. x86, x86_64, ARM, SPARC, PowerPC 등 다양한 프로세서를 지원하는 몇 안되는 가상머신 SW이다. 마찬가지로, 리눅스 운영체제에서 `sudo apt-get install qemu` 명령어를 입력하면 설치된다.
 
