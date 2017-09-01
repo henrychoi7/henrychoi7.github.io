@@ -28,7 +28,7 @@ title: Resume
   - 3학년 재학 중
 
 - **동아리 / Club**
-  - 디펜더(*Defender*) 정보보호 및 IT 동아리 (*2012~2013*)
+  - 디펜더(*Defender*) 정보보호 및 IT 동아리 (*2013~2014*)
   - 리더스(*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영 (*2017~*)
 
 ### IT BANK
@@ -74,6 +74,7 @@ title: Resume
   - 스마트그리드 보안 해커톤 해킹 부문 3위 (*2016*)
   - 2016 가천대학교 해커톤 장려상 (*2016*)
   - 제 1회 보안취약점 자동분석 아이디어 공모전 우수상 (*2017*)
+  - CODEGATE 2017 해킹 시연 동영상 공모전 장려상 & 특별상 (*2017*)
 
 - **발표 논문 / Presentation & Research**
   - '사이버공격 - 당신과 조직을 어떻게 위협하는가?' 발표 (*2013*)
@@ -95,6 +96,9 @@ title: Resume
 ## Leadership & Activities
 
 - **SUA(SecurityPlus Union Academy)**
+  - 작성 중
+
+- **CodeEngn(CodeEngn Conference)**
   - 작성 중
 
 <br>
