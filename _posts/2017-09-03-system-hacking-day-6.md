@@ -39,3 +39,33 @@ title: SUA 시스템 해킹 스터디
 마지막으로, ActivateActCtx 함수의 실제 주소값을 구하기 위해 `u [Base 주소값] + [ActivateActCtx 함수의 Offset 주소]`를 치면 해당 주소가 디스어셈블되고, 정확하게 kernel32.dll 내 ActivateActCtx 함수의 주소값이 나온다(*DLL Base에 ActivateActCtx Offset 주소를 더한 값과 동일하다*).
 
 이제 함수의 주소값을 동적으로 찾는 방법을 이해할 수 있다. 다음 시간에는 지금까지의 과정을 쉘코드로 구현해 보자.
+
+<br>
+## [질문 내용 정리]
+
+[질문 내용]
+
+
+- **이중 연결 리스트란?**
+
+자료 구조에서 배열을 갖춘 리스트 형태 중 하나로, 노드와 노드가 서로 연결되어 있는 리스트이다. 단순 연결 리스트와 다르게 노드가 이전 노드와 다음 노드로 구성되어 있어서 노드를 탐색하는 방향이 양쪽(*양방향*)으로 가능하다.
+
+- **EAT(Export Address Table)란?**
+
+윈도우 운영체제에서는 프로그램에서 함수를 호출할 때 라이브러리를 사용한다. 여기서 Export는 라이브러리 자신이 가지고 있는 함수를 다른 PE 파일에게 제공하는 것을 의미한다. 만약에 다른 PE 파일에서 kernel32.dll이라는 라이브러리에 존재하는 함수를 사용하고 싶을 때, kernel32.dll의 EAT을 통해 사용하고자 하는 함수의 시작 주소를 구할 수 있다. 참고로, 라이브러리 파일은 대부분 .dll, .sys이다.
+
+- **IMAGE_EXPORT_DIRECTORY란?**
+
+IMAGE_EXPORT_DIRECTORY는 해당 라이브러리에서 Export할 함수들에 대한 정보를 담고 있는 구조체이며 한 PE 파일 내 하나만 존재한다. 멤버 변수 중 AddressOfFunctions, AddressOfNames, AddressOfNameOrdinals은 각각 Export 하는 함수의 주소 배열, 함수 이름의 주소 배열, Ordinal(*서수*) 주소 배열을 말한다.
+
+- **WinDBG 명령어 중 dt [구조체명] [메모리 주소]는 정확히 무슨 뜻일까?**
+
+자료 구조를 볼 때 사용하는 명령어가 dt다. dt는 Data Type(*데이터 형*)의 약자이며, 디버깅 심볼이 다운 가능할 때 해당 구조체의 정보를 보여준다. 예를 들어, `dt ntdll! _LIST_ENTRY 0x12345678` 명령어는 0x12345678 메모리 주소를 가진 데이터를 ntdll의 LIST_ENTRY 구조체로 맞추어 보여준다는 뜻이다.
+
+- **MAGE_EXPORT_DIRECTORY 를 찾기 위해 Base 주소에 DOS_HEADER, IMAGE_FILE_HEADER 크기를 더하는 데, 여기서 DOS_HEADER 크기가 왜 0xf4 인가?**
+
+인터넷에 찾아보면 64바이트(*0x40*)라고 나오지만.. 뭔가 덜 더한 것 싶어 DOS_stub 크기를 봤는데, 이 크기는 가변값이라고 함. 아직 해결 중. 노가다로 4바이트 씩 더하고 싶지 않음..
+
+- **WinDbg에서 심볼릭 링크 서버에서 제대로 다운이 안 받아진 오류?**
+
+VM에서는 다운이 잘 받아졌는데 가상화하지 않은 윈도우 환경에서는 받아졌다. 아직 해결 중
