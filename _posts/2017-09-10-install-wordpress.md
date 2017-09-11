@@ -9,4 +9,8 @@ CMS(*Content Management System*) 시스템 중 워드프레스(*WordPress*)는 �
 
 세상의 모든 CMS 중 가장 많은 플러그인을 제공하고, 모바일 기기에 반응형 웹으로 자동으로 디자인이 변경되기까지! 그 밖에도 수백 가지의 기능들이 존재한다. 자, 이제 설치해보자!
 
-여기서는 VirtualBox, CentOS, PHP, nginx(*Apache httpd*), MySQL 설치한 다음에 워드프레스를 설치하겠다.
+여기서는 VirtualBox, CentOS, PHP, nginx(*Apache httpd*), MySQL 설치한 다음에 워드프레스를 설치하겠다. 우선 VirtualBox부터 설치하자. [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 웹사이트에서 OS에 맞게 다운로드 받을 수 있다. Ubuntu에서 VirtualBox 설치 화면은 아래와 같다.
+
+<p style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/virtualbox1.jpg" width="40%">
+</p>
