@@ -7,7 +7,7 @@ title: Resume
 <br>
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/profile.jpeg" width="40%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/profile.jpeg" width="40%">
 </p>
 
 <br>
