@@ -27,7 +27,7 @@ VirtualBox를 설치하고, 미리 다운 받은 CentOS iso 파일을 지정하�
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/centos1.jpeg" width="80%">
 </p>
 
-이제 워드프레스 설치에 앞서 PHP, nginx(*Apache httpd*), MySQL을 순서대로 설치해보자. 워드프레스는 웹 서비스를 위한 nginx, PHP 7과 데이터를 저장하기 위한 MySQL이 필요하다.
+이제 워드프레스 설치에 앞서 PHP, nginx(*Apache httpd*), MySQL을 순서대로 설치해보자. 워드프레스는 웹 서비스를 위한 nginx(*Apache httpd*), PHP 7과 데이터를 저장하기 위한 MySQL이 필요하다.
 > SSH 접속 설정, SSH Root 로그인 제한 설정, SMTP 설정, Yum 저장소 추가 설정은 가본 또는 선택이다.
 
 PHP는 서버에서 동적으로 HTML을 구성하기 위한 서버측(*Server-side*) 스크립트 언어이다. 아래 명령어를 입력해서 설치하자.
@@ -49,21 +49,34 @@ yum install php70w-mysql php70w-xml php70w-soap php70w-xmlrpc php70w-mbstring ph
 </p>
 > PHP 설치 확인!
 
-이어서 nginx를 설치하자. nginx는 비동기 처리 방식의 웹 서버로 Apache httpd와 더불어 가장 많이 쓰인다. 아래 명령어를 입력하면 된다.
+이어서 Apache httpd를 설치하자. nginx는 비동기 처리 방식의 웹 서버로 Apache httpd와 더불어 가장 많이 쓰인다. 하지만, 세팅 중 CentOS에서만 PHP 파일 인식이 되지 않아 Apache로 바꿨다.. Apache httpd 설치 명령어는 아래를 입력하면 된다.
 
 ```bash
+# Apache httpd 설치
+yum install httpd
+
+# Apache httpd 설치 후 서비스 시작 명령어
+systemctl start httpd
+systemctl enable httpd
+
+# nginx 설치
 yum install nginx
-```
 
-기본 환경 설정은 `root /var/www`와 충돌할 여지가 있으므로 백업하고, `/etc/nginx/conf.d/www.conf` 파일에서 웹 사이트의 홈 디렉토리, 도메인 등 별도로 nginx를 설정할 수 있다. 설정 완료 후, 서비스 등록 및 시작 명령어를 입력한다.
-
-```bash
+# nginx 설치 후 서비스 시작 명령어
 systemctl enable nginx.service
 systemctl start nginx.service
 
 # nginx 설정 확인 및 적용
 nginx -t
 nginx -s reload
+
+# 정상적인 웹 서비스를 하도록 방화벽 설정
+systemctl enable firewalld
+systemctl start firewalld
+
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --reload
 ```
 
 이제 MySQL을 설치해보자. MySQL은 전 세계에서 가장 많이 쓰이는 오픈소스 DB 중 하나로 현재 MariaDB라는 것도 있지만, 여기서는 오라클에서 주도하는 MySQL 5 버전을 사용한다. 다음 명령어로 설치한다.
@@ -88,9 +101,10 @@ mysql_secure_installation
 systemctl restart mysqld.service
 ```
 
-이제 nginx에서 PHP 기능을 사용하기 위한 모듈로 PHP-FPM(*FastCGI Process Manager*)를 설치하면 된다. PHP-FPM은 프로세스 관리, 통계 관리, 서비스 시작/종료 등 여러 가지 기능을 위해 사용한다.
+nginx의 경우, PHP 기능을 사용하기 위한 모듈로 PHP-FPM(*FastCGI Process Manager*)를 설치하면 된다. PHP-FPM은 프로세스 관리, 통계 관리, 서비스 시작/종료 등 여러 가지 기능을 위해 사용한다.
 
 ```bash
+# PHP-FPM 설치
 yum install php70w-fpm
 
 # /etc/php-fpm.d/www.conf 파일 수정
@@ -143,13 +157,13 @@ mysql -u root -p
 # 만약에 mysql 연결 실패 에러가 뜨면 `service mysqld start`를 입력해보자.
 
 # wordpress 사용자 계정 생성
-mysql> CREATE USER wordpress@localhost IDENTIFIED BY "chl932356";
+mysql> create user wordpress@localhost identified by "chl932356";
 
 # wordpress DB 생성
 mysql> create database wordpress;
 
 # wordpress@localhost 계정에 전체 권한 부여 및 백업 플러그인 등 DB 관리 기능 사용
-mysql> GRANT ALL ON wordpress.* TO wordpress@localhost;
+mysql> grant all privileges on wordpress.* TO wordpress@localhost;
 
 # 적용
 mysql> flush privileges;
@@ -167,22 +181,23 @@ mysql> exit
 # 워드프레스 다운로드
 wget https://wordpress.org/latest.tar.gz
 tar zxvf latest.tar.gz wordpress
-mv wordpress/ /var/www/wordpress
+mv wordpress/ /var/www/html
 
 # 워드프레스의 미디어, 테마 또는 플러그인이 저장되는 디렉토리 생성
 mkdir /var/www/wordpress/wp-content/uploads
 mkdir /var/www/wordpress/wp-content/upgrade
 
-# 신규 디렉토리가 추가 되었으므로 -R(하위 디렉토리까지 포함) 옵션을 주고, 다시 권한 수정
-chown -R nginx:nginx /var/www/wordpress
-chcon -R -t httpd_sys_content_t /var/www/wordpress
-cd /var/www/wordpress/
+# (Apache httpd 경우) 신규 디렉토리가 추가 되었으므로 -R(하위 디렉토리까지 포함) 옵션을 주고, 다시 권한 수정
+mkdir -p /var/www/html/wordpress/wp-content/uploads
+chown -R apache:apache /var/www/html/wordpress
+chcon -Rv --type=httpd_sys_content_t /var/www/html/wordpress
 
 # 웹 서비스 방지를 위해 상위 디렉토리로 옮김
-mv wp-config-sample.php ../wp-config.php
+cd /var/www/html/wordpress/
+mv wp-config-sample.php wp-config.php
 ```
 
-그리고, nginx의 설정 내 root 디렉토리(*/var/www*)를 `/var/www/wordpress`로 변경한다.
+nginx의 경우, 홈페이지 root 디렉토리(*/var/www*)를 `/var/www/wordpress`로 변경한다.
 
 ```bash
 # vi /etc/nginx/conf.d/www.conf 파일 수정
@@ -192,14 +207,15 @@ server {
        ...
 }
 
-# 서비스 적용을 위해 nginx 재시작
+# 서비스 적용을 위해 nginx(Apache httpd)재시작
 systemctl restart nginx.service
+systemctl restart httpd
 ```
 
 마지막으로, wp-config.php를 편집해서 워드프레스의 DB 설정을 할 수 있다. 보안 설정도 여기서 수정하면 된다.
 
 ```
-# vi /var/www/wp-config.php
+# vi /var/www/wordpress/wp-config.php
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
 
@@ -213,4 +229,9 @@ define('DB_PASSWORD', 'wp123');
 define('DB_HOST', 'localhost');
 ```
 
-설정은 완료됐다. 이제 설정한 도메인으로 접속하면 워드프레스 설정 화면이 나온다.
+설정은 완료됐다. 이제 설정한 도메인으로 접속하면 워드프레스 설정 화면이 나온다. 기본 URL은 `http://localhost/wordpress/wp-admin/install.php`이다. 여기서는 Apache httpd를 사용했지만, nginx도 추천한다.
+
+<p style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/wordpress1.png" width="80%">
+</p>
+> 위 화면처럼 안 나왔으면 천천히 다시 세팅해보자.

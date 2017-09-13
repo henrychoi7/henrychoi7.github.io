@@ -26,7 +26,11 @@ Ubuntu OS를 다운 받고 설치할 USB 메모리를 PC에 연결한 후, Unive
 > Step 3: Ubuntu를 설치하려는 USB 메모리 선택한다.<br>
 > Step 4: Persistent file size를 조절하여 USB 메모리에서 Ubuntu를 실행했을 때 작업 내용이 저장되도록 한다.
 
-USB 메모리에 설치가 모두 완료되면 끝! 이제 USB로 부팅하면 아래처럼 Ubuntu Linux가 실행될 것이다.
+USB 메모리에 설치가 모두 완료되어, USB로 부팅하면 아래처럼 Ubuntu Linux가 실행되면서 바탕화면이 나오면 성공!
+
+<p style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/boot1.jpeg" width="80%">
+</p>
 
 <p style="text-align:center;">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/install2.jpg" width="80%">
