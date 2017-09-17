@@ -214,18 +214,22 @@ systemctl start php-fpm.service
 # 워드프레스 다운로드
 wget http://wordpress.org/latest.tar.gz
 tar zxvf latest.tar.gz wordpress
-mv wordpress/ /var/www/html/wordpress
+mv wordpress/ /var/www/html/
+
+# 위의 wordpress 디렉토리 복사 명령어보다 아래 명령어를 추천
+# rsync는 파일, 디렉토리 권한 유지 및 무결성 기능을 제공함
+rsync -avP wordpress/ /var/www/html/
 
 # 워드프레스의 미디어, 테마 또는 플러그인이 저장되는 디렉토리 생성
-mkdir -p /var/www/html/wordpress/wp-content/uploads
-mkdir -p /var/www/html/wordpress/wp-content/upgrade
+mkdir -p /var/www/html/wp-content/uploads
+mkdir -p /var/www/html/wp-content/upgrade
 
 # 신규 디렉토리가 추가 되었으므로 -R(하위 디렉토리까지 포함) 옵션을 주고, 다시 권한 수정
-chown -R apache:apache /var/www/html/wordpress
-chcon -Rv --type=httpd_sys_content_t /var/www/html/wordpress
+chown -R apache:apache /var/www/html/
+chcon -Rv --type=httpd_sys_content_t /var/www/html/
 
 # 웹 서비스 방지를 위해 상위 디렉토리로 옮김
-cd /var/www/html/wordpress/
+cd /var/www/html/
 mv wp-config-sample.php wp-config.php
 ```
 
@@ -236,13 +240,13 @@ Apache httpd의 경우, 바로 서비스 재시작하면 된다.
 systemctl restart httpd
 ```
 
-nginx의 경우, 홈페이지 root 디렉토리(*/var/www*)를 `/var/www/wordpress`로 변경 후 서비스 재시작한다.
+nginx의 경우, 홈페이지 root 디렉토리(*/var/www*)를 `/var/www/html`로 변경 후 서비스 재시작한다.
 
 ```bash
 # vi /etc/nginx/conf.d/www.conf 파일 수정
 server {
        ...
-       root /var/www/wordpress;
+       root /var/www/html;
        ...
 }
 
@@ -253,7 +257,7 @@ systemctl restart nginx.service
 마지막으로, wp-config.php를 편집해서 워드프레스의 DB 설정을 할 수 있다. 보안 설정도 여기서 수정하면 된다.
 
 ```
-# vi /var/www/wordpress/wp-config.php
+# vi /var/www/html/wp-config.php
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
 
@@ -273,3 +277,5 @@ define('DB_HOST', 'localhost');
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/wordpress1.png" width="80%">
 </p>
 > 여기까지 오면 잠시 쉬어도 될 것 같다. 위 화면처럼 안 나오면 천천히 다시 도전하기!
+
+혹시, URL을 수동으로 바꾸고 싶으면 `vi /etc/hosts` 파일을 수정해서 도메인을 지정하면 된다. 클라이언트에서 접속할 때도 마찬가지!
