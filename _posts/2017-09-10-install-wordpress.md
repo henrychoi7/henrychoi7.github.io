@@ -30,6 +30,9 @@ VirtualBox를 설치하고, 미리 다운 받은 CentOS iso 파일을 지정하�
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/centos1.jpeg" width="80%">
 </p>
 
+CentOS의 기본 설정을 하자. 우선 sudo 권한 부여를 한다. `vi /etc/sudoers` 파일에서 `root ALL=(ALL) ALL` 여기 밑에 `[계정 이름] ALL=(ALL) ALL`을 추가한다. 그 다음, `vi /etc/sshd/ssh_config` 파일에서 `PermitRootLogin no`로 설정하고, `systemctl restart sshd`로 서비스를 재시작한다. 마지막으로, `yum -y update` 명령어로 시스템 업데이트를 진행한다.
+> EPEL 레포지토리 추가 및 설정은 [링크](https://www.server-world.info/en/note?os=CentOS_7&p=initial_conf&f=6)를 참고하고, Vim 설정도 다음 [링크](https://www.server-world.info/en/note?os=CentOS_7&p=initial_conf&f=7)를 참고하자.
+
 이제 워드프레스 설치에 앞서 PHP, nginx(*Apache httpd*), MySQL을 순서대로 설치해보자. 워드프레스는 웹 서비스를 위한 nginx(*Apache httpd*), PHP 7과 데이터를 저장하기 위한 MySQL이 필요하다.
 > SSH 접속 설정, SSH Root 로그인 제한 설정, SMTP 설정, Yum 저장소 추가 설정은 가본 또는 선택이다.
 
@@ -56,6 +59,13 @@ firewall-cmd --permanent --zone=public --add-service=http
 firewall-cmd --permanent --zone=public --add-service=https
 firewall-cmd --reload
 
+# 위 명령어를 사용하지 않고, 방화벽을 끄려면 아래를 입력
+systemctl stop firewalld
+systemctl disable firewalld
+
+# SELinux도 기능을 꺼 두자. 파일 내용 중 SELINUX=disabled로 하면 된다.
+vi /etc/selinux/config
+
 # nginx 설치
 yum install nginx
 
@@ -80,7 +90,7 @@ yum install mysql-server
 
 # 위 명령어가 안 될 경우
 yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
-yum -y install mysql-community-server $ sudo systemctl enable mysqld
+yum -y install mysql-community-server
 
 # 부팅 시 mysqld 자동 실행 및 서비스 시작
 systemctl enable mysqld
@@ -90,11 +100,10 @@ systemctl start mysqld
 chkconfig mysqld on
 service mysqld start
 
-# MySQL 보안 강화 및 서비스 재시작
-mysql_secure_installation
+# MySQL 서비스 재시작
 service mysqld restart
 ```
-> 필요하면 `vi /etc/my.cnf` 파일을 수정해서 기본 설정을 바꿔도 된다.
+> 추후 비밀번호 정책은 `vi /etc/my.cnf` 파일 마지막 줄에 `validate-password=off`를 추가하여 끌 수 있다.
 
 워드프레스에서 사용할 MySQL DB에 대한 사용자 계정 생성 및 권한 설정, DB Scheme 생성 등은 선택이 아닌 필수다. root 계정을 사용하는 건 아주 위험한 보안 문제를 가지는 것이지만, 우선 기본적인 것만 하고 넘어가자. 중간에 모르는 내용이 있거나 에러가 발생하면 꼭 검색해서 찾을 것!
 
@@ -134,6 +143,9 @@ mysql> grant all privileges on wordpress.* TO wordpress@localhost;
 # 적용
 mysql> flush privileges;
 mysql> exit
+
+# MySQL 보안 강화
+mysql_secure_installation
 ```
 > MySQL에서 비밀번호 변경 에러, mysqld 에러 외 문제들은 대부분 /etc/my.cnf 파일 수정으로 해결된다.
 
@@ -214,9 +226,7 @@ systemctl start php-fpm.service
 # 워드프레스 다운로드
 wget http://wordpress.org/latest.tar.gz
 tar zxvf latest.tar.gz wordpress
-mv wordpress/ /var/www/html/
 
-# 위의 wordpress 디렉토리 복사 명령어보다 아래 명령어를 추천
 # rsync는 파일, 디렉토리 권한 유지 및 무결성 기능을 제공함
 rsync -avP wordpress/ /var/www/html/
 
