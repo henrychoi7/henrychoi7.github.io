@@ -48,10 +48,9 @@ yum -y install httpd
 # Apache httpd 설치 후 서비스 시작 명령어
 systemctl enable httpd
 systemctl start httpd
-service httpd restart
 
 # 정상적인 웹 서비스를 하도록 방화벽 설정
-yum install firewalld
+yum -y install firewalld
 systemctl enable firewalld
 systemctl start firewalld
 
@@ -67,7 +66,7 @@ systemctl disable firewalld
 vi /etc/selinux/config
 
 # nginx 설치
-yum install nginx
+yum -y install nginx
 
 # nginx 설치 후 서비스 시작 명령어
 systemctl enable nginx.service
@@ -86,7 +85,7 @@ nginx -s reload
 
 ```bash
 # MySQL 설치
-yum install mysql-server
+yum -y install mysql-server
 
 # 위 명령어가 안 될 경우
 yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
@@ -98,10 +97,7 @@ systemctl start mysqld
 
 # 위 명령어가 안 될 경우
 chkconfig mysqld on
-service mysqld start
-
-# MySQL 서비스 재시작
-service mysqld restart
+systemctl start mysqld
 ```
 > 추후 비밀번호 정책은 `vi /etc/my.cnf` 파일 마지막 줄에 `validate-password=off`를 추가하여 끌 수 있다.
 
@@ -113,23 +109,26 @@ mysql
 mysql> use mysql;
 mysql> update user set password=password('비밀번호') where user='root';
 
-# 초기 MySQL 비밀번호 랜덤 설정 시 알아내는 방법
+# 위 명령어가 안 될 경우, 초기 MySQL 비밀번호 랜덤 설정 시 알아내는 방법
 grep 'temporary password' /var/log/mysqld.log
 
-# 비밀번호 변경 에러 시 사용
+# 다시 접속
+mysql -u root -p '비밀번호'
+
+# 비밀번호 변경 시 사용
 mysql> update user set authentication_string=password('비밀번호') where user='root';
+
+# 위 명령어가 안 될 경우 사용
+mysql> set password = password('비밀번호')
 
 # 적용
 mysql> flush privileges;
-
-# 적용 확인
-mysql> select host, user, password from user;
 
 # \q 명령어로 나가서 다시 root 계정으로 로그인     
 mysql -u root -p
 
 # MySQL 연결 실패 에러가 나올 경우 사용
-service mysqld start
+systemctl start mysqld
 
 # wordpress 사용자 계정 생성
 mysql> create user wordpress@localhost identified by "chl932356";
@@ -172,7 +171,7 @@ yum -y install php70w php70w-mysql php70w-gd php70w-pear
 yum search php70w
 
 # PHP 7 추가 모듈 설치
-yum install php70w-mysql php70w-xml php70w-soap php70w-xmlrpc php70w-mbstring php70w-json php70w-gd php70w-mcrypt php70w-mysql php70w-pear
+yum -y install php70w-mysql php70w-xml php70w-soap php70w-xmlrpc php70w-mbstring php70w-json php70w-gd php70w-mcrypt php70w-mysql php70w-pear
 ```
 > 필요할 경우, `vi /etc/php.ini` 파일 내 시간, 보안 설정을 변경해도 좋다.
 
