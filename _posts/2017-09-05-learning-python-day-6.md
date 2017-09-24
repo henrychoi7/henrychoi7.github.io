@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파이썬(Python) 기초
+title: 파이썬(Python) 기초 - 함수 입출력, 파일 입출력
 ---
 
 ### 170905

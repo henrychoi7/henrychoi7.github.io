@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파이썬(Python) 기초
+title: 파이썬(Python) 기초 - 리스트, 튜플 자료형
 ---
 
 ### 170817

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 워드프레스(WordPress) 설치하기
+title: 워드프레스(WordPress) 설치하기 - VirtualBox, CentOS, APM
 ---
 
 ### 170910
@@ -15,19 +15,19 @@ CMS(*Content Management System*) 시스템 중 워드프레스(*WordPress*)는 �
 여기서는 VirtualBox, CentOS, PHP, nginx(*Apache httpd*), MySQL 설치한 다음에 워드프레스를 설치하겠다. 우선 VirtualBox부터 설치하자. [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 웹사이트에서 OS에 맞게 다운로드 받을 수 있다. Ubuntu에서 VirtualBox 설치 화면은 아래와 같다. CentOS iso 파일은 [CentOS](https://www.centos.org/download/) 웹사이트에서 다운로드 받을 수 있다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/virtualbox1.jpg" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/virtualbox1.jpg" width="80%">
 </p>
 
 VirtualBox를 설치하고, 미리 다운 받은 CentOS iso 파일을 지정하여 가상머신을 실행시키면 아래 화면처럼 CentOS 초기 부팅 화면이 나온다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/virtualbox2.jpeg" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/virtualbox2.jpeg" width="80%">
 </p>
 
 결과적으로, 아래 화면처럼 Ubuntu Linux 내 VirtualBox에서 CentOS를 성공적으로 실행시킬 수 있다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/centos1.jpeg" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/centos1.jpeg" width="80%">
 </p>
 
 CentOS의 기본 설정을 하자. 우선 sudo 권한 부여를 한다. `vi /etc/sudoers` 파일에서 `root ALL=(ALL) ALL` 여기 밑에 `[계정 이름] ALL=(ALL) ALL`을 추가한다. 그 다음, `vi /etc/sshd/ssh_config` 파일에서 `PermitRootLogin no`로 설정하고, `systemctl restart sshd`로 서비스를 재시작한다. 마지막으로, `yum -y update` 명령어로 시스템 업데이트를 진행한다.
@@ -149,7 +149,7 @@ mysql_secure_installation
 > MySQL에서 비밀번호 변경 에러, mysqld 에러 외 문제들은 대부분 /etc/my.cnf 파일 수정으로 해결된다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/mysql1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/mysql1.png" width="80%">
 </p>
 > MySQL 준비 완료 화면
 
@@ -176,7 +176,7 @@ yum -y install php70w-mysql php70w-xml php70w-soap php70w-xmlrpc php70w-mbstring
 > 필요할 경우, `vi /etc/php.ini` 파일 내 시간, 보안 설정을 변경해도 좋다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/php1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/php1.png" width="80%">
 </p>
 > PHP 설치 확인!
 
@@ -213,7 +213,7 @@ systemctl start php-fpm.service
 사실, PHP에서 제공하지 않는 몇 가지 추가 기능, 방화벽 설정, 파일 업로드 제한 설정 등 건드려야 하지만 여기서는 생략하겠다. 그리고 보안을 생각한다면 디렉토리 권한 점검을 꼭 하고, 신규로 만든 www 디렉토리에 권한이 불충분하면 403 Forbidden 에러가 발생할 수 있으니 유의하자. 워드프레스에 필요한 기본 소프트웨어를 모두 설치하면 아래와 같이 확인 가능하다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/version1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/version1.png" width="80%">
 </p>
 
 <br>
@@ -283,7 +283,7 @@ define('DB_HOST', 'localhost');
 드디어 설정이 모두 끝났다. 이제 설정한 도메인으로 접속하면 워드프레스 설정 화면이 나온다. 기본 URL은 `http://localhost/wordpress/wp-admin/install.php`이다. 여기서는 Apache httpd를 사용했지만, nginx도 많이 사용되니 꼭 알아두자.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/wordpress1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170910/wordpress1.png" width="80%">
 </p>
 > 여기까지 오면 잠시 쉬어도 될 것 같다. 위 화면처럼 안 나오면 천천히 다시 도전하기!
 

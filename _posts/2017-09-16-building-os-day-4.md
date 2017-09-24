@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 64비트 멀티코어 OS 만들기
+title: 64비트 멀티코어 OS 만들기 - 부트 로더 화면 제어
 ---
 
 ### 170916
@@ -82,7 +82,7 @@ db 0xAA							            ; 1바이트를 선언하고 값은 0xAA
 빌드 후, QEMU를 실행하면 아래와 같이 빨간색 배경에 밝은 녹색으로 출력된 M을 확인할 수 있다. 그렇다면 이번에는 세그먼트 레지스터를 초기화하여 더 많은 작업을 실행해보자. BIOS가 부트 로더를 실행했을 때, 세그먼트 레지스터에 BIOS가 사용한 값이 들어 있으므로 세그먼트 레지스터를 초기화하지 않으면 엉뚱한 주소에 접근할 수 있다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/m.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170916/m.png" width="80%">
 </p>
 
 MINT64 OS에서는 0x7C0으로 초기화 했는데, 그 이유는 BIOS가 부트 로더를 디스크에서 읽어 메모리에 복사하는 위치가 0x07C0이기 때문이다. 부트 로더의 코드(*Code Segment*)와 데이터(*Data Segment*)는 0x0700부터 512바이트 범위에 존재하므로 CS와 DS 세그먼트 레지스터 모두 0x7C0으로 설정할 수 있다. 여기서는 jmp 명령과 mov 명령을 이용해서 세그먼트 초기화를 진행했다.
@@ -143,7 +143,7 @@ C언어 소스 코드를 objdump.exe를 이용해서 어셈블리어 코드를 �
 위 명령어를 실행한 결과는 아래와 같다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/gcc.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170916/gcc.png" width="80%">
 </p>
 
 
@@ -154,7 +154,7 @@ a.o 파일이 생성되면 이 파일을 objdump.exe의 파라미터로 -d 옵�
 위 명령어를 실행한 결과는 아래와 같다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/objdump.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170916/objdump.png" width="80%">
 </p>
 
 <br>
@@ -295,5 +295,5 @@ db 0xAA							            ; 1바이트를 선언하고 값은 0xAA
 이제 QEMU(*가상머신*)으로 부트 로더를 실행하면 메시지가 출력되는 부팅 화면을 볼 수 있다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/message.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170916/message.png" width="80%">
 </p>

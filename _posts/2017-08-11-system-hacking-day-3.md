@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SUA 시스템 해킹 스터디
+title: SUA 시스템 해킹 스터디 - Exploit 분류
 ---
 
 ### 170811 3주차

@@ -14,12 +14,12 @@ USB 메모리에 Linux OS인 Ubuntu를 설치해서 언제 어디서나 USB 메�
 Ubuntu OS를 다운 받고 설치할 USB 메모리를 PC에 연결한 후, Universal USB Installer 프로그램을 실행시키자. 그러면 아래와 같이 설정하고 Create 버튼을 누르면 된다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/prepare1.JPG" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/prepare1.JPG" width="80%">
 </p>
 > Ubuntu OS 파일과 Universal USB Installer 프로그램
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/install1.JPG" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/install1.JPG" width="80%">
 </p>
 > Step 1: 설치하려는 OS(*Ubuntu*) 선택<br>
 > Step 2: 다운받은 Ubuntu iso 파일을 지정<br>
@@ -29,9 +29,9 @@ Ubuntu OS를 다운 받고 설치할 USB 메모리를 PC에 연결한 후, Unive
 USB 메모리에 설치가 모두 완료되어, USB로 부팅하면 아래처럼 Ubuntu Linux가 실행되면서 바탕화면이 나오면 성공!
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/boot1.jpeg" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/boot1.jpeg" width="80%">
 </p>
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/install2.jpg" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/install2.jpg" width="80%">
 </p>

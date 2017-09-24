@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SUA 시스템 해킹 스터디
+title: SUA 시스템 해킹 스터디 - WinDBG 활용 기초
 ---
 
 ### 170903 5주차

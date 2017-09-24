@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SUA 시스템 해킹 스터디
+title: SUA 시스템 해킹 스터디 - 포트 바인딩 쉘코드
 ---
 
 ### 170917 7주차
@@ -20,24 +20,24 @@ Metasploit Framework는 [공식 홈페이지](https://www.metasploit.com/)에서
 Kali Linux에 로그인한 후, 터미널을 열고 `msfvenom -h` 명령을 실행해 보자. 자세한 사용법은 [공식 문서](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)나 [GitHub](https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom)를 참고하면 된다. 기본적으로 출력 형식, 포맷, 아키텍처, 플랫폼을 적으면 된다. 사용 가능한 Payload 목록은 `msfvenom -l | grep windows` 명령어를 실행해서 확인하자. 예를 들어 계산기를 띄우는 명령 수행 쉘코드를 만들어 보자.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/msfvenom1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170918/msfvenom1.png" width="80%">
 </p>
 > `msfvenom -h`
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/msfvenom2.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170918/msfvenom2.png" width="80%">
 </p>
 > `msfvenom -l | grep windows`
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/msfvenom3.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170918/msfvenom3.png" width="80%">
 </p>
 > 계산기를 띄우는 쉘코드. 비록 널바이트가 포함되어 있더라도 이는 쉘코드 인코딩을 통해 해결이 가능하다. 쉘코드 정상 동작을 위해 테스트를 하면 똑같이 cmd 명령이 실행되는 것을 확인할 수 있다.
 
 이번에는 팝업 창을 띄워 주는 Messagebox를 실행하는 쉘코드를 Python 형식으로 출력해 본다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/msfvenom4.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170918/msfvenom4.png" width="80%">
 </p>
 
 Python Exploit 용 쉘코드도 쉽게 얻을 수 있으며, 아래와 같이 작성한 후 공격 목표에 따라 쉘코드만 변경하면 다양한 공격을 실행할 수 있다.
@@ -56,7 +56,7 @@ PAYLOAD = BUFFER + DUMMY + SHELLCODE
 포트 바인딩 쉘코드는 아래와 같이 명령어를 실행하면 출력된다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/msfvenom5.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170918/msfvenom5.png" width="80%">
 </p>
 
 그러면 로컬에 7777번 포트가 접속 준비(*Listening*)하고 있는 것을 볼 수 있다. 외부에서 telnet, nc 등의 클라이언트 접속 프로그램으로 해당 포트에 접근하면 인증없이 바로 쉘에 접속할 수 있게 된다.

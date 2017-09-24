@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파이썬(Python) 기초
+title: 파이썬(Python) 기초 - 자료형 활용
 ---
 
 ### 170817 (이어서)
