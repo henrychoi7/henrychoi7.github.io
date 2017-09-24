@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 64비트 멀티코어 OS 만들기
+title: 64비트 멀티코어 OS 만들기 - GCC, NASM, QEMU 설치
 ---
 
 ### 170726 1주차
