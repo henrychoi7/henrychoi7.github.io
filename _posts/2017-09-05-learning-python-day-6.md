@@ -59,7 +59,7 @@ life is too short
 ```
 > 지난 for문에서 봤듯이 한 줄에 결과값을 계속 이어서 출력하려면 입력 인수 end를 이용해 끝 문자를 지정해야 한다.
 
-이제 파일 읽고 쓰는 방법을 알아보자. 여태까지 "**입력**"을 받을 때는 직접 입력하고, "**출력**"할 때는 결과값을 출력하는 방식으로 프로그래밍했지만, 파일을 통해 입출력도 가능하다. 파일을 새로 만들고, 새 파일에 내용을 적고, 적은 내용을 읽어 보는 프로그램을 만들어 보자.
+이제 파일 읽고 쓰는 방법을 알아보자. 여태까지 "**입력**"을 받을 때는 직접 입력하고, "**출력**"할 때는 결과값을 출력하는 방식으로 프로그래밍했지만, 파일을 통해 입출력도 가능하다. 파일을 새로 만들고, 새 파일에 내용을 적고, 적은 내용을 읽어 보는 프로그램을 만들어보자.
 
 <br>
 ## 파일 읽고 쓰기
@@ -99,7 +99,7 @@ for i in range(1, 11):
 ```
 > 위 두 프로그램의 차이점은 data를 출력하는 방법이다. 첫 번째 프로그램은 data를 print 대신에 파일 객체 f의 write() 함수를 이용한 것이다.
 
-이번에는 외부 파일을 읽어 들여 프로그램에서 사용해 보자. 첫 번째 방법은 readline() 함수를 이용하는 것이다.
+이번에는 외부 파일을 읽어 들여 프로그램에서 사용해보자. 첫 번째 방법은 readline() 함수를 이용하는 것이다.
 
 ```python
 f = open("C:/Python/새파일.txt", 'r')
@@ -116,5 +116,78 @@ while True:
     if not line: break
     print(line)
 f.close()
+
+# 위 파일 입력과 아래 키보드 입력 방식이 동일하다
+while 1:
+    data = input()
+    if not data: break
+    print(data)
 ```
-> whil
+> while True:라는 무한 루프 안에서 f.readline()을 이용해 파일을 계속해서 한 줄씩 읽어들이는 경우다. 만약 더 이상 읽을 라인이 없으면 break를 수행한다. 참고로, readline()은 더 이상 읽을 라인이 없으면 None을 출력한다.
+
+이번에는 readlines() 함수를 이용해보자. readlines() 함수는 파일의 모든 라인을 읽어서 각각의 줄을 요소로 갖는 리스트로 리턴한다. 아래를 보자.
+
+```python
+f = open("C:/Python/새파일.txt", 'r')
+lines = f.readlines()
+for line in lines:
+    print(line)
+f.close()
+# 출력하면 ["1 번째 줄입니다.\n", "2 번째 줄입니다.\n", ..., "10 번째 줄입니다.\n"]라는 리스트가 된다.
+```
+
+세 번째 방법은 read() 함수를 이용한다.
+
+```python
+f = open("C:/Python/새파일.txt", 'r')
+data = f.read()
+print(data)
+f.close()
+```
+> f.read()는 파일의 내용 전체를 문자열로 리턴한다. 즉, 위 예의 data는 파일의 전체 내용이다.
+
+파일을 쓰기 모드(*'w'*)로 열면 해당 파일의 내용이 모두 사라진다. 하지만, 기존의 값을 유지하고 새로운 값만 추가할 경우, 파일을 추가 모드(*'a'*)로 열면 된다.
+
+```python
+f = open("C:/Python/새파일.txt",'a')
+for i in range(11, 20):
+    data = "%d번째 줄입니다.\n" % i
+    f.write(data)
+f.close()
+```
+> 위 예시는 파일을 하나 열고, write를 이용해서 파일이 원래 가지고 있던 내용 바로 다음부터 결과값을 적기 시작한다.
+
+파일을 항상 열고 닫을 때, 만약에 자동으로 처리할 수 있다면? 이럴 때 파이썬의 with문을 쓰면 된다.
+
+```python
+# 파일을 열고 닫는 일반적인 예시
+f = open("foo.txt", 'w')
+f.write("Life is too short, you need python")
+f.close()
+
+# with문을 이용해 위 예제를 다시 쓴 모습
+with open("foo.txt", "w") as f:
+    f.write("Life is too short, you need python")
+```
+> with문을 사용하면 with 블록을 벗어나는 순간 열린 파일 객체 f가 자동으로 close된다.
+
+DOS를 사용할 때 type 명령어가 바로 뒤에 적힌 파일 이름을 인수로 받아 그 내용을 출력해 주는 명령어다. 파이썬에서는 sys라는 모듈을 이용하여 입력 인수를 직접 줄 수 있다.
+
+```python
+import sys
+
+args = sys.argv[1:]
+for i in args:
+    print(i)
+```
+> 위처럼 쓰면 입력받는 인수들을 for문을 이용해 차례대로 하나씩 출력하는 예다. sys 모듈의 argv는 명령창에서 입력한 인수들을 의미한다.
+
+위의 예를 이용해 아래처럼 입력된 소문자를 대문자로 바꾸는 간단한 스크립트를 하나 만들 수 있다.
+
+```python
+import sys
+
+args = sys.argv[1:]
+for i in args:
+    print(i.upper(), end = ' ')
+```
