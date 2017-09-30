@@ -128,19 +128,3 @@ mysql> start slave;
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170922/slave.png" width="80%">
 </p>
 > 슬레이브 MySQL DB
-
-<br>
-- **참고**
-
-만약에 서버나 홈페이지를 공개(Public) 서비스로 전환하면 [SELinux](https://ko.wikipedia.org/wiki/보안_강화_리눅스)는 옵션이 아닌 필수다. SELinux를 설정하는 방법은 아래와 같다.
-
-```shell
-vi /etc/sysconfig/selinux
-
-# SELinux 파일 내 설정을 확인한다.
-SELINUX=enforcing
-
-# 시스템 재시작
-reboot
-```
-> 참고로, SELinux를 설정하면 사설 인증서(Root CA)를 브라우저에 등록해서 사용할 수 없다.

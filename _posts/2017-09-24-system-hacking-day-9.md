@@ -28,7 +28,7 @@ title: SUA 시스템 해킹 스터디 - 리버스 커넥션 쉘코드
 > `nc -l 7777`
 
 <p style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs2.png" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170924/rcs2.jpg" width="80%">
 </p>
 > Visual Studio에서 빌드한 후, 실행시킨다.
 
