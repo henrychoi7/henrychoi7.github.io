@@ -93,6 +93,7 @@ mysql> quit
 <p style="text-align:center;">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170929/sqlinjection3.png" width="80%">
 </p>
+> 여기서 사용한 명령어는 `tail -f /var/lib/mysql/gachon.log`, `tail -f /var/log/mysqld.log`, `tail -f /var/www/html/wp-content/debug.log`다. tail 명령어는 주로 실시간 모니터링할 때 많이 사용한다.
 
 <br>
 - **Plug-in 활용 디버깅**
