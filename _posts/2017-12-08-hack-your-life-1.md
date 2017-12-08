@@ -138,5 +138,5 @@ HACK YOUR LIFE 1기 모집 공고 발견!
 
 <p align="center">
   <img
-  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/m3.jpeg">
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/m4.jpeg">
 </p>
