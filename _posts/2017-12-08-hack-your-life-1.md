@@ -4,7 +4,8 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
 ---
 <p align="center">
   <img
-  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/slogan2.png">
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/slogan2.png"
+  width="80%">
 </p>
 
 ## 팀 소개
