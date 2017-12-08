@@ -20,14 +20,14 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/hk4.jpg">
 </p>
 
-## 이희광 ⬆
+## 이희광 ↑
 
 - 1998년 6월 28일 익산에서 출생! 그 후 전라도에서 쭉 거주했어요
 - 2017년 건국대학교 서울캠퍼스 소프트웨어학과 합격과 동시에 서울 상경 성공했어요
 - 2017년 지구는 둥그니까 HACK YOUR LIFE 1기 최종선발 (그랬으면 좋겠다)
 
 안녕하세요, 저는 20년 살아오면서 개발과 보안 쪽으로 관심이 굉장히 많았습니다! 사이트도 만들어서 운영해 본 경험도 있고, 학교나 각종 대외연합 커뮤니티 등에서 운영진 경험이 다수있기 때문에 이번 프로젝트를 진행하는데 큰 도움이 될 것 같습니다! ~~정말요~?~~
-<br>
+
 다음은 누굴까요?
 
 <p align="center">
@@ -40,7 +40,7 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/yr1.jpg">
 </p>
 
-## 이예린 ⬆
+## 이예린 ↑
 
 안녕하세요, 신비주의 컨셉으로 잡은 예린이에요. 지금 얼굴은 합격하고 나서.. 헤헷 ~~얜 뭐지?~~
 
@@ -56,7 +56,7 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
 - 10년 후: 미국에서 출산했어요 응애♪
 
 이상! 제 과거와 현재와 미래였습니다.
-<br>
+
 다음 사람은!
 
 <p align="center">
@@ -69,14 +69,14 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/hd1.jpeg">
 </p>
 
-## 최한동 ⬆
+## 최한동 ↑
 
 안녕하세요! 영어를 많이많이 아주많이 잘하는 팀원입니다. 뉴질랜드에서 5년 정도 살다왔는데 자꾸 친구들이 영어로 말해라고 그러네요(부담부담 왕부담 ㄷㄷ). 사실 지금 읽고 계신 이 글이 실린 블로그가 **제 블로그** 입니다(눈치가 빠르신 분들은 이미 알겠죠?). 그래서 [Resume](https://handongchoi.com/resume/) 메뉴로 가시면 제 약력이 보입니다.
 
 일본 도쿄 3일 여행부터 유럽 17개국 45일 여행까지. 여기저기 돌아다니면서 "디지털 노마드로 생활하면 어떨까?", "일하면서 여행하면 무슨 기분일까?" 라는 생각이 계속 들었습니다. 저도 '지구는 둥그니까' 팀원 분들처럼 한 번쯤은 그러고 싶었어요. 여행하는 블로거와 원격근무를 하시는 분들의 이야기도 읽어보고, 그 사람들이 겪었던 상황이나 고민들도 보면서 저도 도전하고 싶어졌습니다!
 
 때마침 좋은 기회를 발견했어요. 흐흐
-<br>
+
 마지막 팀원은!!
 <p align="center">
   <img
@@ -88,7 +88,7 @@ title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/kh2.jpeg">
 </p>
 
-## 김광현 ⬆
+## 김광현 ↑
 
 - 1993년 2월 25일 경상남도 통영에서 태어났다!!
 - 2012년 3월 세종대학교 컴퓨터공학과 입학했어 훗
@@ -106,7 +106,7 @@ AWS 세미나 참석~!
 
 <p align="center">
   <img
-  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/notice.jpeg">
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/sms.png">
 </p>
 
 ### 2017.12.03
@@ -114,7 +114,7 @@ HACK YOUR LIFE 1기 모집 공고 발견!
 
 <p align="center">
   <img
-  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/sms.png">
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171208/notice.jpeg">
 </p>
 
 ### 2017.12.05
