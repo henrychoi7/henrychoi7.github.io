@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [지구는 둥그니까] HACKED OUR LIFE
+title: (지구는 둥그니까 - HACK YOUR LIFE 1기 모집) HACKED OUR LIFE
 ---
 
 ## 팀 소개
