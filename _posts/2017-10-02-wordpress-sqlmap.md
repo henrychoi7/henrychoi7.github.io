@@ -8,7 +8,7 @@ title: sqlmap으로 워드프레스(WordPress) 공격 및 로그 확인하기
 지난 [포스트](https://handongchoi.com/2017/09/29/wordpress-sql-injection-log/)에 이어서 이번에는 [sqlmap](http://sqlmap.org/)을 사용해서 워드프레스에 공격을 시도하고, 로그를 확인하겠다.
 > 테스트 환경은 지난 포스트와 동일하게 CentOS에 Apache httpd, PHP, MySQL을 설치하여 구성했다.
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/warning.png" width="80%">
 </p>
 
@@ -20,7 +20,7 @@ sqlmap을 사용하려면 우선 파이썬(*Python*) 2.x 버전을 설치해야 
 - 파이썬(*Python*) 2.7 다운로드 : [링크](https://www.python.org/downloads/)
 - sqlamp 다운로드 : [링크](http://sqlmap.org/)
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap1.png" width="80%">
 </p>
 
@@ -46,7 +46,7 @@ sqlmap은 크게 5가지 정도 SQL Injection 취약점을 분석 및 공격할 
 
 위에 썼던 명령어를 실행하면 아래와 같이 나온다.
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap2.png" width="80%">
 </p>
 
@@ -60,7 +60,7 @@ sqlmap 명령을 한 번 실행하면 더 이상 SQL 질의 및 삽입 공격을
 
 아래 화면을 보자.
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap3.png" width="80%">
 </p>
 
@@ -69,24 +69,24 @@ sqlmap으로 워드프레스 웹사이트 분석 결과, `GET parameter '파라�
 `./sqlmap.py -u https://www.gachon.com/wp-login.php?id=1 -p id --dbms=mysql --current-user`
 > 위 명령어는 -p 옵션으로 취약한 지점이 되는 파라미터를 지정 후, --dbms 옵션으로 DBMS 형태를 MySQL로 지정하고, --current-user 옵션으로 현재 DB의 User 정보를 추출하도록 한다.
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap4.png" width="80%">
 </p>
 
 만약에 DB와 테이블 이름까지 파악했다면, `./sqlmap.py -u https://www.gachon.com/wp-login.php?id=1 --dbms=mysql --current-user -D wordpress -T sample` 이런 식으로 테이블 내 정보까지 추출할 수 있다.
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap5.png" width="80%">
 </p>
 
 혹시, 현재 워드프레스보다 더 취약한 환경에서 SQL Injection 취약점 분석을 진행하고 싶다면 Acunetix 사의 웹 해킹 테스트 플랫폼 [웹사이트](http://testphp.vulnweb.com/)에 가서 하자.
 > 여긴 정말 취약점이 잘 나온다.. 아래는 해당 사이트에서 sqlmap 모의 침투 테스트 결과!
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap6.png" width="80%">
 </p>
 
-<p style="text-align:center;">
+<p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171002/sqlmap7.png" width="80%">
 </p>
 > 위 사진을 보면 DB 계정 정보(심지어 비밀번호)가 모두 나오는 것을 확인할 수 있다.

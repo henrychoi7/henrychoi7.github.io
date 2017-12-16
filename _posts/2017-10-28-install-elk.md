@@ -97,14 +97,21 @@ local7.notice    /var/log/bash_history
   width="80%">
 </p>
 
-이제 사용자의 명령어가 .bash_history 파일에 기록된다. 그리고 Apache httpd 로그를 설정하자. 웹에서 데이터를 보낼 때, GET에는 URL로 데이터의 정보가 대략적으로 표시되고, POST는 패킷 Body에 담아져서 데이터가 보이지 않는다. 그래서 Apache(*v2.4.6 기준*)는 기본적으로 POST 방식으로 데이터를 전송할 때 Body 내용을 로그로 남길 수 있도록 Apache의 모듈 `mod_dumpio`를 사용한다. 이 모듈은 따로 설치할 필요없이 간단하게 파일만 수정하면 사용할 수 있다(*여기서는 서버에 SSL을 적용했기 때문에 ssl.conf를 수정했다. 만약에 SSL을 사용하지 않는다면 httpd.conf를 수정하면 된다*).
+이제 사용자의 명령어가 .bash_history 파일에 기록된다. 그리고 Apache httpd 로그를 설정하자. 웹에서 데이터를 보낼 때, GET에는 URL로 데이터의 정보가 대략적으로 표시되고, POST는 패킷 Body에 담아져서 데이터가 보이지 않는다. 그래서 Apache(*v2.4.29 기준*)는 기본적으로 POST 방식으로 데이터를 전송할 때 Body 내용을 로그로 남길 수 있도록 Apache의 모듈 [mod_dumpio](https://httpd.apache.org/docs/2.4/mod/mod_dumpio.html) 또는 [mod_dumpost](https://github.com/danghvu/mod_dumpost)를 사용한다. 이 모듈은 따로 설치할 필요없이 간단하게 파일만 수정하면 사용할 수 있다(*여기서는 서버에 SSL을 적용했기 때문에 ssl.conf를 수정했다. 만약에 SSL을 사용하지 않는다면 httpd.conf를 수정하면 된다*).
+
+<p align="center">
+  <img
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/mod_dumpost.png"
+  width="80%">
+</p>
+> mod_dumpost 모듈 설치 화면
 
 ```bash
 $sudo vim /etc/httpd/conf.d/ssl.conf
 
 <VirtualHost _default_:443>
 ...
-# 아래 내용 추가
+# 아래 내용 추가(여기서는 mod_dumpio 사용)
 LoadModule dumpio_module modules/mod_dumpio.so
 
 ErrorLog logs/ssl_error_log
@@ -299,31 +306,47 @@ systemctl restart kibana
 systemctl restart filebeat
 ```
 
-혹시 서비스 시작 도중 시스템이 느려지면 RAM 4GB 이상 설정한다. 이제 `http://127.0.0.1:5601`에 접속하면 Kibana가 정상적으로 실행된다. 처음에 Index Pattern이 없다고 나온다. 그러면 `curl localhost:9200/_cat/indices?v` 명령어를 실행해서 Elasticsearch에 저장된 Index Pattern을 확인하고 Kibana에 추가하면 된다(*여기서는 filebeat-*로 추가했다. Index Pattern은 추후 원하는 대로 수정 가능하므로 참고할 것*). 이제 Dashboard 혹은 Discover 메뉴에서 보고 싶은 로그를 필터링하여 볼 수 있다. 아래와 같이 SQL Injection 공격 시도 로그도 확인할 수 있다.
+혹시 서비스 시작 도중 시스템이 느려지면 RAM 4GB 이상 설정한다. 이제 `http://127.0.0.1:5601`에 접속하면 Kibana가 정상적으로 실행된다. 처음에 Index Pattern이 없다고 나온다. 그러면 `curl localhost:9200/_cat/indices?v` 명령어를 실행해서 Elasticsearch에 저장된 Index Pattern을 확인하고 Kibana에 추가하면 된다(*여기서는 filebeat-*로 추가했다. Index Pattern은 추후 원하는 대로 수정 가능하므로 참고할 것*). 이제 Dashboard 혹은 Discover 메뉴에서 보고 싶은 로그를 필터링하여 볼 수 있다.
 
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/curl.png"
   width="80%">
 </p>
+> `curl localhost:9200/_cat/indices?v` 실행 결과
 
 <p align="center">
   <img
-  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/kibana1.png"
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/kibana2.png"
   width="80%">
 </p>
+> Index Pattern 설정
 
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/sql_injection.png"
   width="80%">
 </p>
-
-아래 화면은 사용자가 su 명령어를 입력한 로그를 추출한 결과다. 이제 원하는 Command List를 입력해서 로그를 확인할 수 있다.
+> SQL Injection 공격 시도 MySQL 로그
 
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/command.png"
+  width="80%">
+</p>
+> 사용자가 su 명령어를 입력한 로그를 추출한 결과(원하는 Command List를 입력해서 로그를 확인 가능)
+
+마지막으로, SQL Injection 공격 시도가 있을 때 `ssl_error_log`에서 아래처럼 POST Body 메시지를 볼 수 있다. Logstash 덕분에 JSON 형식으로 잘 넘어온다.
+
+<p align="center">
+  <img
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/post1.png"
+  width="80%">
+</p>
+
+<p align="center">
+  <img
+  src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/171028/post2.png"
   width="80%">
 </p>
 
@@ -348,7 +371,7 @@ AWStats를 실행하려면 아래 명령어처럼 입력하면 된다.
 
 `/usr/local/awstats/wwwroot/cgi-bin/awstats.pl -update -config=www.gachon.com`
 
-웹 브라우저를 실행해서 다음 URL: `http://www.gachon.com/awstats/awstats.pl?config=www.gachon.com`을 주소창에 입력해서 들어가면 아래와 같이 AWStats 웹 로그를 다양한 형태로 확인할 수 있다.
+웹 브라우저를 실행해서 다음 URL: `http://www.gachon.com/awstats/awstats.pl?config=www.gachon.com`처럼 주소창에 입력해서 들어가면 아래와 같이 AWStats 웹 로그를 다양한 형태로 확인할 수 있다.
 
 <p align="center">
   <img
