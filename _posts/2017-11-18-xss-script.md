@@ -100,3 +100,9 @@ div:target {width: 200px;}
 ```
 
 나중에 기회가 된다면 sqlmap같은 도구를 XSS 취약점 점검 도구 버전으로 개발해보고 싶다. xssmap? 사실 사람들이 개인적으로 만든 퍼저(*Fuzzer*)들이 많지만, 플랫폼 또는 언어를 통합할 수 있다면 좋을 것 같다.
+
+[참고자료]
+- http://www.smeegesec.com/2012/06/collection-of-cross-site-scripting-xss.html
+- http://www.thegeekstuff.com/2012/02/xss-attack-examples/?utm_source=tuicool
+- https://84692bb0df6f30fc0687-25dde2f20b8e8c1bda75aeb96f737eae.ssl.cf1.rackcdn.com/--xss.html
+- https://github.com/cure53/H5SC

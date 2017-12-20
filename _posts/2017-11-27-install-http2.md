@@ -71,4 +71,4 @@ Protocols h2 http/1.1
 > Firefox 브라우저를 통한 HTTP/2 통신 확인
 
 [참고자료]
-http://www.bloter.net/archives/210122
+- http://www.bloter.net/archives/210122
