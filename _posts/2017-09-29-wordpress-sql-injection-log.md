@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 워드프레스(WordPress) SQL Injection 공격 로그 확인 및 SELinux 적용
+title: 워드프레스(WordPress) Logging 설정 후 SQL Injection 공격 로그 확인하고 SELinux 적용까지
 ---
 
 ### 170929

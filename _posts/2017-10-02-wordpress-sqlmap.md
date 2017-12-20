@@ -3,8 +3,6 @@ layout: post
 title: sqlmap으로 워드프레스(WordPress) 공격 및 로그 확인하기
 ---
 
-### 171002
-
 지난 [포스트](https://handongchoi.com/2017/09/29/wordpress-sql-injection-log/)에 이어서 이번에는 [sqlmap](http://sqlmap.org/)을 사용해서 워드프레스에 공격을 시도하고, 로그를 확인하겠다.
 > 테스트 환경은 지난 포스트와 동일하게 CentOS에 Apache httpd, PHP, MySQL을 설치하여 구성했다.
 
