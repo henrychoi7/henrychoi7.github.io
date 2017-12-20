@@ -12,12 +12,12 @@ USB 메모리에 Linux OS인 Ubuntu를 설치해서 언제 어디서나 USB 메�
 Ubuntu OS를 다운 받고 설치할 USB 메모리를 PC에 연결한 후, Universal USB Installer 프로그램을 실행시키자. 그러면 아래와 같이 설정하고 Create 버튼을 누르면 된다.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/prepare1.JPG" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/prepare1.jpg" width="80%">
 </p>
 > Ubuntu OS 파일과 Universal USB Installer 프로그램
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/install1.JPG" width="80%">
+  <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/170908/install1.jpg" width="80%">
 </p>
 > Step 1: 설치하려는 OS(*Ubuntu*) 선택<br>
 > Step 2: 다운받은 Ubuntu iso 파일을 지정<br>
