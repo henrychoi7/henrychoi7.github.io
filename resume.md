@@ -19,13 +19,13 @@ title: Resume
 ### 가천대학교(Gachon University)
 - **IT대학 컴퓨터공학과(Department of IT, Computer Engineering)**
   - GPA 3.8/4.5
-  - 3학년 재학 중
+  - 4학년 재학 중
 
 - **동아리(Club)**
   - (*2013~2014*) 디펜더(*Defender*) 정보보호 및 IT 동아리 소속
-  - (*2017~*) 리더스(*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
+  - (*2017*) 리더스(*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
   - (*2017~*) Payload 교내 CTF팀 소속
-  - (*2018*) Pay1oad 정보보호 동아리 창설 예정
+  - (*2018~*) Pay1oad 정보보호 동아리 창설
 
 ### IT BANK
 - **정보보안전문가 교육훈련과정**
@@ -69,6 +69,7 @@ title: Resume
   - (*2016*) 'DLMS 프로토콜을 이용한 AMI 시스템 해킹' 발표
   - (*2017*) IoTcube를 활용한 취약점 분석 사례 및 플랫폼 개선 아이디어 연구
   - (*2017*) '화이트박스(소스코드 동적 분석 도구)를 이용한 오픈소스 취약점 탐지 및 패치 방안' 발표
+  - (*2018*) '블루투스 취약점(BlueBorne) 분석 - 블루투스, 이거 실화냐?' 발표
 
 - **취약점 제보(Vulnerability Report)**
   - (*2016*) [OpenCV](https://github.com/opencv/opencv) / [CVE-2013-6629](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629) / IoTcube
@@ -82,12 +83,14 @@ title: Resume
   - (*2017*) 로또빌리지(*LottoVillage*) - 모바일(*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 프로젝트 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
+  - (*2018~*) Let's Encrypt 웹사이트 번역 프로젝트 진행 중
 
 <br>
 ## Leadership & Activities
 - **SUA(SecurityPlus Union Academy)**
   - (*2016~2017*) SUA 4기 운영진 홍보팀
   - (*2017~2018*) SUA 5기 운영진 복지팀장
+  - (*2018~*) OWASP 코리아 챕터 회원
 
 - **CodeEngn(CodeEngn Conference)**
   - (*2017*) 코드엔진 홈페이지 및 컨퍼런스 운영진 - 코드엔진 컨퍼런스 개선 위원회, 홈페이지 개발(*Django*), RSS 관리, 최근이슈 토론 프로젝트 [참여](http://codeengn.com/)
