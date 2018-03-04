@@ -60,7 +60,7 @@ title: Resume
   - (*2016*) 2016 가천대학교 해커톤 *장려상*
   - (*2017*) 제 1회 보안취약점 자동분석 아이디어 공모전 *우수상*
   - (*2017*) CODEGATE 2017 해킹 시연 동영상 공모전 *장려상 & 특별상*
-  - (*2017*) 제 4회 SW개발보안 경진대회 *최우수상*
+  - (*2017*) 제 4회 SW개발보안 경진대회 *최우수상 & 행정안전부장관상*
   - (*2017*) 제 14회 HDCON 취약점 세션(*CTD: Capture the Drone*) *1위*
 
 - **발표 논문(Presentation & Research)**
@@ -78,7 +78,7 @@ title: Resume
   - (*2016*) [FFmpeg](https://github.com/FFmpeg/FFmpeg) / [CVE-2011-3893](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3893), [CVE-2016-1897](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1897) / IoTcube
 
 - **프로젝트(Projects)**
-  - (*2016~*) 스타트업 공동창업자(*Co-founder*) 및 CTO(*Google의 Campus Seoul에서 준비 중*)
+  - (*2016~*) 스타트업 공동창업자(*Co-founder*) 및 CISO - Google의 Campus Seoul에서 준비 중
   - (*2017*) 개발다봐 - 모바일(*Android*) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/jung2929/devlooks_android)
   - (*2017*) 로또빌리지(*LottoVillage*) - 모바일(*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
