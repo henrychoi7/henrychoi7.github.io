@@ -24,8 +24,12 @@ title: Resume
 - **동아리(Club)**
   - (*2013~2014*) 디펜더(*Defender*) 정보보호 및 IT 동아리 소속
   - (*2017*) 리더스(*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
-  - (*2017~*) Payload 교내 CTF팀 소속
-  - (*2018~*) Pay1oad 정보보호 동아리 창설
+  - (*2017*) Payload 교내 CTF팀 소속
+  - (*2018~*) Pay1oad 정보보호동아리 창립 / Pay1oad 1기 회장 (*초대 회장*)
+
+- **학부연구생**
+  - (*2018~*) Gachon. Fintech Labs ([Prof. Jonghyup Lee](http://jonghyup.com/))
+    - 정보보호 연구실 소속
 
 ### IT BANK
 - **정보보안전문가 교육훈련과정**
@@ -78,12 +82,15 @@ title: Resume
   - (*2016*) [FFmpeg](https://github.com/FFmpeg/FFmpeg) / [CVE-2011-3893](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3893), [CVE-2016-1897](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1897) / IoTcube
 
 - **프로젝트(Projects)**
-  - (*2016~*) 스타트업 공동창업자(*Co-founder*) 및 CTO(*Google의 Campus Seoul에서 준비 중*)
+  - (*2016~*) 스타트업 [앰포](https://www.rocketpunch.com/companies/empo-4) 공동창업자(*Co-founder*) 및 CISO
   - (*2017*) 개발다봐 - 모바일(*Android*) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/jung2929/devlooks_android)
   - (*2017*) 로또빌리지(*LottoVillage*) - 모바일(*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 프로젝트 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~*) Let's Encrypt 웹사이트 번역 프로젝트 진행 중
+  - (*2018~*) Let's Encrypt 웹사이트 번역 프로젝트 [진행](https://github.com/henrychoi7/letsencrypt_translation)
+  - (*2018~*) CalendarLog - SNS형 공유 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
+  - (*2018~*) 웹 모의해킹 사이버짐(Cyber-Gym) 및 워게임 플랫폼 구축 프로젝트 진행 중
+  - (*2018~*) 국가보안연구소 프로젝트 진행 중
 
 <br>
 ## Leadership & Activities
@@ -95,6 +102,10 @@ title: Resume
 - **CodeEngn(CodeEngn Conference)**
   - (*2017*) 코드엔진 홈페이지 및 컨퍼런스 운영진 - 코드엔진 컨퍼런스 개선 위원회, 홈페이지 개발(*Django*), RSS 관리, 최근이슈 토론 프로젝트 [참여](http://codeengn.com/)
   - 코드엔진 [Talk #1](http://codeengn.com/archive/CodeEngn%20Talk/%EC%BD%94%EB%93%9C%EC%97%94%EC%A7%84%20Talk%20%231,%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%20%EA%B3%BC%EC%97%B0%20%EC%8B%A0%EB%A2%B0%ED%95%B4%EC%95%BC%20%ED%95%98%EB%82%98.pdf) [Talk #2](http://codeengn.com/archive/CodeEngn%20Talk/%EC%BD%94%EB%93%9C%EC%97%94%EC%A7%84%20Talk%20%232,%20%EB%9E%9C%EC%84%AC%EC%9B%A8%EC%96%B4%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0%20%EA%B8%B0%EC%97%85%EC%9D%B4%EB%82%98%20%EA%B0%80%EC%A0%95%EC%97%90%EC%84%9C%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%B0%A9%EC%96%B4%EB%A5%BC%20%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98.pdf)
+
+- **KUCIS(Korea University Clubs Information Security)**
+  - (*2018~*) KUCIS 서경강권역 소속
+
 
 <br>
 ## Skills & Certification
