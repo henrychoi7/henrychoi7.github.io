@@ -66,6 +66,7 @@ title: Resume
   - (*2017*) CODEGATE 2017 해킹 시연 동영상 공모전 *장려상 & 특별상*
   - (*2017*) 제 4회 SW개발보안 경진대회 *최우수상 & 행정안전부장관상*
   - (*2017*) 제 14회 HDCON 취약점 세션(*CTD: Capture the Drone*) *1위*
+  - (*2018*) 가천미래프로젝트 - 창의융합설계 경진대회 *최우수상 & 가천대학교총장상*
 
 - **발표 논문(Presentation & Research)**
   - (*2013*) '사이버공격 - 당신과 조직을 어떻게 위협하는가?' 발표
@@ -88,7 +89,7 @@ title: Resume
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 프로젝트 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
   - (*2018~*) Let's Encrypt 웹사이트 번역 프로젝트 [진행](https://github.com/henrychoi7/letsencrypt_translation)
-  - (*2018~*) CalendarLog - SNS형 공유 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
+  - (*2018~*) CalendarLog - 익명 SNS형 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
   - (*2018~*) 웹 모의해킹 사이버짐(Cyber-Gym) 및 워게임 플랫폼 구축 프로젝트 진행 중
   - (*2018~*) 국가보안연구소 프로젝트 진행 중
 
