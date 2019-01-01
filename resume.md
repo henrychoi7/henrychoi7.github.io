@@ -11,7 +11,7 @@ title: Resume
 
 ## Education & Military Service
 
-## 분당고등학교(Bundang High School)
+### 분당고등학교(Bundang High School)
 
 - **활동**
   - 지역과학영재교육원 입학 후 교육 이수 및 Hands-on-Science, FOCUS 과학동아리 활동
