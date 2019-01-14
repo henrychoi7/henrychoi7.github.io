@@ -112,7 +112,7 @@ title: Resume
 ## Business
 
 - **EMPO**
-  - (*2017~2018*) CISO(*Chief Information Security Officer*)
+  - (*2017~2018*) CISO (*Chief Information Security Officer*)
   - (2019~) Security Engineer
   - 기술 R&D 및 운영 보안, 서버 개발 지원
   - 소스 코드 보안성 검토
@@ -135,17 +135,17 @@ title: Resume
   - (*2018*) Pay1oad - KUCIS 서경강권역 소속
 
 - **K-Shield Jr. (케이쉴드 주니어)**
-  - (*2019*) K-Shield Jr. 1기 서포터즈
+  - (*2019*) K-Shield Jr. 서포터즈 1기
 
 ## Skills & Certification
 
-- **기술 및 능력(Skills)**
-  - 프로그래밍(*Programming*): C, Java(*Android*), Python, JavaScript(*Node.js*), Rust, Shell script, Git, IoT(*Arduino, Raspberry Pi*), AWS(*EC2, S3, Route 53, RDS, VPC*), Firebase, ELK Stack
-  - 운영체제(*OS*): 윈도우(*xp, 7, 10, 서버 2008 R2*), 리눅스(*CentOS, Ubuntu, Debian(Kali Linux), Tails*), 맥(*macOS*)
-  - 정보보안(*Security*): 네트워크(*sqlmap, Nmap, NSE, Wireshark*), 리버스 엔지니어링(*OllyDbg, Immunity Debugger, IDA, Apktool, Radare2, Objdump, WinDbg, Metasploit*), 정적 분석(*IoTcube, Facebook Infer, PMD, FindBugs*), 프로그래밍(*x86, x86_64, ARM, DSP Assembly*)
+- **기술 및 능력 (Skills)**
+  - 프로그래밍 (*Programming*): C, Java (*Android*), Python, JavaScript (*Node.js*), Rust, Shell script, Git, IoT (*Arduino, Raspberry Pi*), AWS (*EC2, S3, Route 53, RDS, VPC 등*), Firebase, ELK Stack
+  - 운영체제 (*OS*): 윈도우 (*xp, 7, 10, 서버 2008 R2*), 리눅스 (*CentOS, Ubuntu, Kali Linux, Tails*), 맥 (*macOS*)
+  - 정보보안 (*Security*): 네트워크 (*sqlmap, Nmap, NSE, Wireshark*), 리버스 엔지니어링 (*OllyDbg, Immunity Debugger, IDA, Apktool, Radare2, Objdump, WinDbg, Metasploit*), 정적 분석 (*IoTcube, Facebook Infer, PMD, FindBugs*), 프로그래밍 (*x86, x86_64, ARM, DSP Assembly*)
 
-- **자격증(Certificates)**
-  - CCNA(*Cisco Certified Network Associate*)
+- **자격증 (Certificates)**
+  - CCNA (*Cisco Certified Network Associate*)
   - [정보보안산업기사](https://kisq.or.kr/)
   - [Rising Star](https://topcontributor.withgoogle.com/about?hl=en-US) @ Google Product Forums (*Korean*)
-  - 정보보안기사(*필기 합격 후 실기 준비 중*)
+  - 정보보안기사 (*필기 합격 후 실기 준비 중*)
