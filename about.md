@@ -5,33 +5,36 @@ title: About
 
 # 블로그 소개
 
-안녕하세요, 촨동의 블로그를 운영하는 최한동(*Henry*)입니다. 이 곳은 제 개인 블로그이자 추후 여러 정보들을 공유하면서 사람들과 의사소통할 예정입니다. 아직 카테고리 및 콘텐츠가 확실하지 않지만 지금은 64비트 멀티코어 OS 만들기, 시스템 해킹과 파이썬 공부에 관련된 글들을 정리하고 있습니다. 앞으로 제가 사는 이야기들을 비롯해 제 전공과 취미에 관한 글들도 쓸 생각입니다. 아직 미완성이고, 개발 중인 블로그이지만 너그럽게 봐주세요! :)
+안녕하세요, 촨동의 블로그를 운영하는 Henry입니다. 이 곳은 제 개인 블로그이자 추후 여러 정보들을 공유하면서 사람들과 의사소통할 예정입니다. 아직 카테고리 및 콘텐츠가 확실하지 않지만 추후 제가 사는 이야기들을 비롯해 제 전공과 취미에 관한 글들도 쓸 생각입니다. 아직 미완성이고, 개발 중인 블로그이지만 너그럽게 봐주세요! :)
 
 모든 글은 Home 메뉴에서 확인할 수 있습니다. Resume 메뉴로 들어가면 제 Background 프로필이 있고, GitHub 메뉴는 제 GitHub repository 주소입니다.
 
 ***
+
 ## Contacts
 
 블로그 외 기타 문의사항 또는 저와 개인적으로 연락이 필요하시다면 아래 연락처를 이용해 주세요.
 
-**E-mail**: <a href="http://scr.im/handongchoi">w...@g...l.com</a><br>
+**E-mail**: <a href="http://scr.im/handongchoi">w...@g...l.com</a>
 
-**KakaoTalk**: @MrHiD<br>
-
-[**Facebook**](https://www.facebook.com/handongchoi)<br>
-[**LinkedIn**](https://www.linkedin.com/in/henrychoi7/)<br>
-[**Google+**](https://plus.google.com/+HandongChoi)<br>
-[**HackerOne**](https://hackerone.com/henrychoi7)<br>
-[**PacketStorm**](https://packetstormsecurity.com/user/henrychoi7/)<br>
-[**Keybase**](https://keybase.io/handongchoi)<br>
+- Others
+  - **KakaoTalk**: @MrHiD
+  - [**Facebook**](https://www.facebook.com/handongchoi)
+  - [**LinkedIn**](https://www.linkedin.com/in/henrychoi7/)
+  - [**Twitter**](https://twitter.com/h3nrychoi)
+  - [**HackerOne**](https://hackerone.com/henrychoi7)
+  - [**PacketStorm**](https://packetstormsecurity.com/user/henrychoi7/)
+  - [**Keybase**](https://keybase.io/handongchoi)
 
 ## PGP
 
 혹시 보안을 신경쓰시거나 암호화를 원하시면 아래 공개키를 이용해 주세요.
 
-**Key**: 77a7105fa9248e40<br>
+**Key**: 77a7105fa9248e40
+
 **Key Fingerprint**: 40864cb9fe9690232815bd3077a7105fa9248e40
-```
+
+```shell
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsFNBFmYTm0BEADdFq1UPhs9g26WrsLV/FcKvwFP+JYvPN+kFhOtP8j3x3ekcGiC

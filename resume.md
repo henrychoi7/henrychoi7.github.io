@@ -4,6 +4,7 @@ title: Resume
 ---
 
 # Handong Choi (Henry)
+
 <!-- 
 <p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/profile.jpg" width="50%">
@@ -13,63 +14,49 @@ title: Resume
 
 ## Education & Military Service
 
-### 분당고등학교 (Bundang High School)
-
-- **활동**
+- **분당고등학교 (Bundang High School)**
   - 지역과학영재교육원 입학 후 교육 이수 및 Hands-on-Science, FOCUS 과학동아리 활동
   - (*2010*) 교내 과학 저널 Future에 거대입자가속기 (*CERN*)와 블랙홀에 관한 글 기고
 
-### 가천대학교 (Gachon University)
+- **가천대학교 (Gachon University)**
+  - (*2012.03~2019.02*) IT대학 컴퓨터공학과 (Department of IT, Computer Engineering)
+    - GPA 3.8/4.5
+  - 동아리 (Club)
+    - (*2013~2014*) 디펜더 (*Defender*) 정보보호 및 IT 동아리 소속
+    - (*2017*) 리더스 (*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
+    - (*2017*) Payload 교내 CTF팀 소속
+    - (*2018*) Pay1oad 정보보호동아리 창립 / Pay1oad 1기 회장 (*초대 회장*)
+  - 학부연구생 (Lab)
+    - (*2018*) Gachon. Fintech Labs ([Prof. Jonghyup Lee](http://jonghyup.com/))
+    - 정보보호 연구실 소속 프로젝트 팀장
 
-- **IT대학 컴퓨터공학과 (Department of IT, Computer Engineering)**
-  - GPA 3.8/4.5
-  - 2012년 3월 입학, 2019년 2월 졸업
+- **IT BANK**
+  - 정보보안전문가 교육훈련과정
+    - (*2012*) C/C++/Java, Linux, Window Server, CCNA/CCNP
+    - (*2013*) 웹보안, 네트워크보안, 시스템보안, 리버스엔지니어링
 
-- **동아리 (Club)**
-  - (*2013~2014*) 디펜더 (*Defender*) 정보보호 및 IT 동아리 소속
-  - (*2017*) 리더스 (*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
-  - (*2017*) Payload 교내 CTF팀 소속
-  - (*2018*) Pay1oad 정보보호동아리 창립 / Pay1oad 1기 회장 (*초대 회장*)
+- **SUA (SecurityPlus Union Academy)**
+  - 주요정보통신기반시설 취약점 진단 및 보안 교육과정
+    - (*2016*) SUA 회원 대상 정보통신기반보호법의 주요정보통신기반시설 취약점 분석과 IT 인프라 취약점 진단 교육
 
-- **학부연구생**
-  - (*2018*) Gachon. Fintech Labs ([Prof. Jonghyup Lee](http://jonghyup.com/))
-    - 정보보호 연구실 소속
-    - 프로젝트 팀장
+- **스마트그리드 보안 해커톤 (Smart Grid Security Hackathon)**
+  - 스마트그리드 보안 교육 3차 과정
+    - (*2016*) 국가기간망으로 활용되는 스마트그리드 시스템에 대한 이해와 보안 교육 및 실습
 
-### IT BANK
+- **가천대학교 해커톤 (Gachon Univ. Hackathon)**
+  - 2016 가천대학교 해커톤 교육
+    - 하이브리드 애플리케이션 개발하기 (*모바일 웹 애플리케이션*)에 대한 교육
+    - API 웹 데이터 활용하기에 대한 교육
+    - Python을 이용한 데이터마이닝과 인공지능 TensorFlow 교육
 
-- **정보보안전문가 교육훈련과정**
-  - (*2012*) C/C++/Java, Linux, Window Server, CCNA/CCNP 수료
-  - (*2013*) 웹보안, 네트워크보안, 시스템보안, 리버스엔지니어링 수료
+- **K-Shield Jr. (케이쉴드 주니어)**
+  - (*2018*) 정보보호 관리진단 교육 과정 (*1기*) 과정
 
-### 스마트그리드 보안 해커톤 (Smart Grid Security Hackathon)
-
-- **스마트그리드 보안 교육 3차 과정**
-  - (*2016*) 국가 기간망으로 활용되는 스마트그리드 시스템에 대한 이해와 보안 교육 및 실습 수료
-
-### SUA (SecurityPlus Union Academy)
-
-- **주요정보통신기반시설 취약점 진단 및 보안 교육과정**
-  - (*2016*) SUA 대학생 정보보호 연합 커뮤니티 회원 대상 정보통신기반보호법의 주요정보통신기반시설 취약점 분석과 IT 인프라 취약점 진단 교육 수료
-
-### 가천대학교 해커톤 (Gachon Univ. Hackathon)
-
-- **2016 가천대학교 해커톤 교육**
-  - 하이브리드 애플리케이션 개발하기 (*모바일 웹 애플리케이션 개발*)에 대한 교육 수료
-  - API 웹 데이터 활용하기에 대한 교육 수료
-  - Python을 이용한 데이터마이닝과 인공지능 TensorFlow 교육 수료
-
-### K-Shield Jr. (케이쉴드 주니어)
-
-- **정보보호 관리진단 교육 과정**
-  - (*2018*) 정보보호 관리진단 기술인력 (*K-Shield Jr.*) 양성 교육 1기 과정 수료
-
-### 대한민국 육군 (Republic of Korea Army)
-
-- **전문특기병 제 79회차 정보보호기술병**
-  - (*2014*) 육군정보통신학교에서 네트워크, 정보보호 과목 총 7주 과정 교육 수료
-  - (*2014~2016*) 육군 3군단 CERT 복무 및 병장 만기 전역
-  - PC, 네트워크 장비 취약점 점검, 분석 및 사이버 침해사고대응 임무 수행
+- **대한민국 육군 (Republic of Korea Army)**
+  - 전문특기병 제 79회차 정보보호기술병
+    - (*2014*) 육군정보통신학교에서 네트워크, 정보보호 과목 총 7주 과정 교육 수료
+    - (*2014~2016*) 육군 3군단 CERT 복무 및 병장 만기 전역
+    - PC, 네트워크 장비 취약점 점검, 분석 및 사이버 침해사고대응 임무 수행
 
 ## Work & Project
 
@@ -85,7 +72,7 @@ title: Resume
   - (*2018*) 가천대학교 정보보호 동아리 Pay1oad - KUCIS 프로젝트 부문 *최우수상*
   - (*2018*) K-Shield Jr. 정보보호 관리진단 교육 과정(*1기*) 우수 정보보호 취업인재 *선정 및 인증*
 
-- **발표 논문 (Presentation & Research)**
+- **발표 & 논문 (Presentation & Research)**
   - (*2013*) '사이버공격 - 당신과 조직을 어떻게 위협하는가?' 발표
   - (*2016*) IoT 기반 ARP 공격 탐지 시스템 연구
   - (*2016*) 'DLMS 프로토콜을 이용한 AMI 시스템 해킹' 발표
@@ -93,39 +80,52 @@ title: Resume
   - (*2017*) '화이트박스 (소스코드 동적 분석 도구)를 이용한 오픈소스 취약점 탐지 및 패치 방안' 발표
   - (*2018*) '블루투스 취약점 (BlueBorne) 분석 - 블루투스, 이거 실화냐?' 발표
   - (*2018*) '고통스러운 디컴파일러 제작기 - PL길만 걷자' 발표
+  - (*2019*) 'SW개발보안 경진대회 수상 후기' 발표
 
-- **취약점 제보 (Vulnerability Report)**
-  - (*2016*) [OpenCV](https://github.com/opencv/opencv) / [CVE-2013-6629](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629) / IoTcube
-  - (*2016*) [The Sleuth Kit(TSK)](https://github.com/sleuthkit/sleuthkit) / [CVE-2012-1571](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1571) / IoTcube
-  - (*2016*) [SpiderMonkey](https://developer.mozilla.org/ko/docs/SpiderMonkey) / [CVE-2016-1879](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1879) / IoTcube
-  - (*2016*) [FFmpeg](https://github.com/FFmpeg/FFmpeg) / [CVE-2011-3893](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3893), [CVE-2016-1897](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1897) / IoTcube
+- **취약점/버그 제보 (Vulnerability/Bug Report)**
+  - IoTcube
+    - (*2016*) [OpenCV](https://github.com/opencv/opencv) / [CVE-2013-6629](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629)
+    - (*2016*) [The Sleuth Kit(TSK)](https://github.com/sleuthkit/sleuthkit) / [CVE-2012-1571](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1571)
+    - (*2016*) [SpiderMonkey](https://developer.mozilla.org/ko/docs/SpiderMonkey) / [CVE-2016-1879](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1879)
+    - (*2016*) [FFmpeg](https://github.com/FFmpeg/FFmpeg) / [CVE-2011-3893](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3893), [CVE-2016-1897](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1897)
+  - Chromium Project
+    - (*2019*) [Korean character break-up issue on a third party search engine on the search bar shortcut.](https://bugs.chromium.org/p/chromium/issues/detail?id=922843)
+    - (*2019*) [[User Feedback - Beta] Reports of Hangul characters being deleted during input in M75](https://bugs.chromium.org/p/chromium/issues/detail?id=966148)
+    - (*2019*) [Unable to change keyboard input to Korean from English or special characters in iOS Chrome Remote Desktop](https://bugs.chromium.org/p/chromium/issues/detail?id=991885)
 
 - **프로젝트 (Projects)**
   - (*2017*) 개발다봐 - 모바일 (*Android*) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/jung2929/devlooks_android)
-  - (*2017*) 로또빌리지 (*LottoVillage*) - 모바일 (*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
+  - (*2017*) 로또빌리지 - 모바일 (*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 프로젝트 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~*) Let's Encrypt 웹사이트 번역 프로젝트 [진행](https://github.com/henrychoi7/letsencrypt_translation)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 프로젝트 [진행](https://github.com/henrychoi7/letsencrypt_translation)
   - (*2018*) CalendarLog - SNS형 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
-  - (*2018*) DSP Decompiler 개발 및 연구 (*GitHub에 업로드 예정*)
+  - (*2018*) DSP Decompiler 개발 및 연구 프로젝트
 
 ## Business
 
 - **EMPO**
-  - (*2017~2018*) CISO (*Chief Information Security Officer*)
-  - (2019~) Security Engineer
+  - (*2017.01~2018.12*) Security Engineer/CISO
+  - (*2019.01~2019.05*) Security Engineer
   - 기술 R&D 및 운영 보안, 서버 개발 지원
   - 소스 코드 보안성 검토
 
+- **(주)안스포츠**
+  - (*2014.06~2014.08*) Employee (*Part-Time*)
+  - 온라인 쇼핑몰 웹 관리
+  - 물류 관리
+  - 컴퓨터 유지 보수
+
 ## Leadership & Activities
 
-- **Google Product Forums**
-  - (*2013~2017*) Rising Star @ Gmail, Google Maps, Google Chrome
-  - (*2018~*) GPE (*Google Product Expert*) @ Google Chrome
+- **Google Help Community**
+  - (*2013~2017*) Rising Star @ Gmail, Google Maps, Chrome
+  - (*2018~*) Silver GPE (*Google Product Expert*) @ Chrome
+
 - **SUA (SecurityPlus Union Academy)**
   - (*2016~2017*) SUA 4기 운영진 홍보팀
   - (*2017~2018*) SUA 5기 운영진 복지팀장
-  - (*2018~*) OWASP 코리아 챕터 회원
+  - (*2018*) OWASP 코리아 챕터 회원
 
 - **CodeEngn (CodeEngn Conference)**
   - (*2017*) 코드엔진 홈페이지 및 컨퍼런스 운영진 - 코드엔진 컨퍼런스 개선 위원회, 홈페이지 개발 (*Django*), RSS 관리, 최근이슈 토론 프로젝트 [참여](http://codeengn.com/)
@@ -139,13 +139,23 @@ title: Resume
 
 ## Skills & Certification
 
-- **기술 및 능력 (Skills)**
-  - 프로그래밍 (*Programming*): C, Java (*Android*), Python, JavaScript (*Node.js*), Rust, Shell script, Git, IoT (*Arduino, Raspberry Pi*), AWS (*EC2, S3, Route 53, RDS, VPC 등*), Firebase, ELK Stack
-  - 운영체제 (*OS*): 윈도우 (*xp, 7, 10, 서버 2008 R2*), 리눅스 (*CentOS, Ubuntu, Kali Linux, Tails*), 맥 (*macOS*)
-  - 정보보안 (*Security*): 네트워크 (*sqlmap, Nmap, NSE, Wireshark*), 리버스 엔지니어링 (*OllyDbg, Immunity Debugger, IDA, Apktool, Radare2, Objdump, WinDbg, Metasploit*), 정적 분석 (*IoTcube, Facebook Infer, PMD, FindBugs*), 프로그래밍 (*x86, x86_64, ARM, DSP Assembly*)
+- **보유기술 (Technical Skills)**
+  - 프로그래밍 (*Programming*):
+    - C, Java (*Android*), Python, JavaScript (*Node.js*), Rust, Shell script
+  - 운영체제 (*OS*):
+    - 윈도우 (*xp, 7, 10, 서버 2008 R2, 서버 2012*)
+    - 리눅스 (*CentOS, Ubuntu, Kali Linux, Tails*)
+    - 맥 (*macOS*)
+  - 정보보안 (*Security*):
+    - 네트워크: sqlmap, Nmap, NSE, Wireshark
+    - 리버스 엔지니어링: OllyDbg, Immunity Debugger, IDA, Apktool, Radare2, Objdump, WinDbg, Metasploit
+    - 정적 분석: IoTcube, Facebook Infer, PMD, FindBugs
+    - 프로그래밍: x86, x86_64, ARM, DSP Assembly
+  - 기타 (*Others*):
+    - Git & GitHub, AWS (*EC2, S3, Route 53, RDS, VPC*), Firebase, ELK Stack
 
-- **자격증 (Certificates)**
+- **자격증 (Certification)**
   - CCNA (*Cisco Certified Network Associate*)
   - [정보보안산업기사](https://kisq.or.kr/)
-  - [Rising Star](https://topcontributor.withgoogle.com/about?hl=en-US) @ Google Product Forums (*Korean*)
-  - 정보보안기사 (*필기 합격 후 실기 준비 중*)
+  - [Silver GPE (Google Product Expert)](https://productexperts.withgoogle.com/what-it-is) @ Google Help Communities, Chrome
+  - 정보보안기사 (*필기*)
