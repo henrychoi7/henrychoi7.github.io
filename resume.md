@@ -102,7 +102,7 @@ title: Resume
 
 - **번역 (Technical Korean Translations)**
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여 및 PR, 관리](https://github.com/letsencrypt/website/pull/595)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여, PR 및 관리](https://github.com/letsencrypt/website/pull/595)
   - (*2019*) HTTP/3 Explained [by Daniel Stenberg](https://daniel.haxx.se/) 번역 [참여](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
   - (*2019~*) Google Project Zero 문서 2개 번역 중
   - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
@@ -111,17 +111,17 @@ title: Resume
 
 ## Business
 
-- **EMPO**
-  - (*2017.01~2018.12*) Security Engineer/CISO
-  - (*2019.01~2019.05*) Security Engineer
-  - 기술 R&D 및 운영 보안, 서버 개발 지원
-  - 소스 코드 보안성 검토
-
 - **(주)안스포츠**
   - (*2014.06~2014.08*) Employee (*Part-Time*)
   - 온라인 쇼핑몰 웹 관리
   - 물류 관리
   - 컴퓨터 유지 보수
+
+- **EMPO**
+  - (*2017.01~2018.12*) Security Engineer/CISO
+  - (*2019.01~2019.05*) Security Engineer
+  - 기술 R&D 및 운영 보안, 서버 개발 지원
+  - 소스 코드 보안성 검토
 
 ## Leadership & Activities
 
