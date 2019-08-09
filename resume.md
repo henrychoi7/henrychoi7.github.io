@@ -101,8 +101,9 @@ title: Resume
   - (*2018*) DSP Decompiler 개발 및 연구 프로젝트
 
 - **번역 (Technical Korean Translations)**
-  - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
+  - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
   - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여 및 PR, 관리](https://github.com/letsencrypt/website/pull/595)
+  - (*2019*) HTTP/3 Explained [by Daniel Stenberg](https://daniel.haxx.se/) 번역 [참여](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
   - (*2019~*) Google Project Zero 문서 2개 번역 중
   - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
   - (*2019~*) Bug Bounties and Mental Health 번역 중
