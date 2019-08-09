@@ -97,10 +97,16 @@ title: Resume
   - (*2017*) 개발다봐 - 모바일 (*Android*) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/jung2929/devlooks_android)
   - (*2017*) 로또빌리지 - 모바일 (*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
-  - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 프로젝트 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~2019*) Let's Encrypt 웹사이트 번역 프로젝트 [진행](https://github.com/henrychoi7/letsencrypt_translation)
   - (*2018*) CalendarLog - SNS형 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
   - (*2018*) DSP Decompiler 개발 및 연구 프로젝트
+
+- **번역 (Technical Korean Translations)**
+  - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 한글 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여 및 PR, 관리](https://github.com/letsencrypt/website/pull/595)
+  - (*2019~*) Google Project Zero 문서 2개 번역 중
+  - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
+  - (*2019~*) Bug Bounties and Mental Health 번역 중
+  - (*2019~*) How to Learn Penetration Testing: A Beginners Tutorial 번역 중
 
 ## Business
 
