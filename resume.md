@@ -3,8 +3,6 @@ layout: page
 title: Resume
 ---
 
-# Handong Choi (Henry)
-
 <!-- 
 <p align="center">
   <img src="https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/profile.jpg" width="50%">

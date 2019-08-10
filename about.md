@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-# 블로그 소개
-
 안녕하세요, 촨동의 블로그를 운영하는 Henry입니다. 이 곳은 제 개인 블로그이자 추후 여러 정보들을 공유하면서 사람들과 의사소통할 예정입니다. 아직 카테고리 및 콘텐츠가 확실하지 않지만 추후 제가 사는 이야기들을 비롯해 제 전공과 취미에 관한 글들도 쓸 생각입니다. 아직 미완성이고, 개발 중인 블로그이지만 너그럽게 봐주세요! :)
 
 모든 글은 Home 메뉴에서 확인할 수 있습니다. Resume 메뉴로 들어가면 제 Background 프로필이 있고, GitHub 메뉴는 제 GitHub repository 주소입니다.
@@ -18,13 +16,13 @@ title: About
 **E-mail**: <a href="http://scr.im/handongchoi">w...@g...l.com</a>
 
 - Others
-  - **KakaoTalk**: @MrHiD
-  - [**Facebook**](https://www.facebook.com/handongchoi)
+  - [**KakaoTalk**](https://open.kakao.com/o/swhn3Szb)
   - [**LinkedIn**](https://www.linkedin.com/in/henrychoi7/)
   - [**Twitter**](https://twitter.com/h3nrychoi)
   - [**HackerOne**](https://hackerone.com/henrychoi7)
   - [**PacketStorm**](https://packetstormsecurity.com/user/henrychoi7/)
   - [**Keybase**](https://keybase.io/handongchoi)
+  - [**Facebook**](https://www.facebook.com/handongchoi) (*Not available*)
 
 ## PGP
 
@@ -34,7 +32,7 @@ title: About
 
 **Key Fingerprint**: 40864cb9fe9690232815bd3077a7105fa9248e40
 
-```shell
+```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsFNBFmYTm0BEADdFq1UPhs9g26WrsLV/FcKvwFP+JYvPN+kFhOtP8j3x3ekcGiC
