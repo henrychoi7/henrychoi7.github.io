@@ -17,8 +17,8 @@ title: Resume
   - (*2010*) 교내 과학 저널 Future에 거대입자가속기 (*CERN*)와 블랙홀에 관한 글 기고
 
 - **가천대학교 (Gachon University)**
-  - (*2012.03~2019.02*) IT대학 컴퓨터공학과 (Department of IT, Computer Engineering)
-    - GPA 3.8/4.5
+  - (*2012.03~2019.02*) IT대학 컴퓨터공학과 학사 (College of IT, B.E. in Department of Computer Engineering)
+    - GPA 3.79 / 4.5
   - 동아리 (Club)
     - (*2013~2014*) 디펜더 (*Defender*) 정보보호 및 IT 동아리 소속
     - (*2017*) 리더스 (*Leaders*) IT 학술 동아리 및 정보보호 러닝셀 운영
@@ -64,7 +64,7 @@ title: Resume
   - (*2016*) 2016 가천대학교 해커톤 *장려상*
   - (*2017*) 제 1회 보안취약점 자동분석 아이디어 공모전 *우수상*
   - (*2017*) CODEGATE 2017 해킹 시연 동영상 공모전 *장려상 & 특별상*
-  - (*2017*) 제 4회 SW개발보안 경진대회 *최우수상 & 행정안전부장관상*
+  - (*2017*) 제 4회 SW 개발보안 경진대회 *최우수상 & 행정안전부장관상*
   - (*2017*) 제 14회 HDCON 취약점 세션 (*CTD: Capture the Drone*) *1위*
   - (*2018*) 가천미래프로젝트 - 창의융합설계 경진대회 *최우수상 & 가천대학교총장상*
   - (*2018*) 가천대학교 정보보호 동아리 Pay1oad - KUCIS 프로젝트 부문 *최우수상*
@@ -78,7 +78,7 @@ title: Resume
   - (*2017*) '화이트박스 (소스코드 동적 분석 도구)를 이용한 오픈소스 취약점 탐지 및 패치 방안' 발표
   - (*2018*) '블루투스 취약점 (BlueBorne) 분석 - 블루투스, 이거 실화냐?' 발표
   - (*2018*) '고통스러운 디컴파일러 제작기 - PL길만 걷자' 발표
-  - (*2019*) 'SW개발보안 경진대회 수상 후기' 발표
+  - (*2019*) 'SW 개발보안 경진대회' 발표
 
 - **취약점/버그 제보 (Vulnerability/Bug Report)**
   - IoTcube
@@ -96,30 +96,39 @@ title: Resume
   - (*2017*) 로또빌리지 - 모바일 (*Android*), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
   - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
   - (*2018*) CalendarLog - SNS형 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
-  - (*2018*) DSP Decompiler 개발 및 연구 프로젝트
+  - (*2018*) DSP Decompiler 개발 및 연구 프로젝트 (*대외비*)
 
 - **번역 (Technical Korean Translations)**
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여, PR 및 관리](https://github.com/letsencrypt/website/pull/595)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 참여 및 [PR](https://github.com/letsencrypt/website/pull/595)
   - (*2019*) HTTP/3 Explained [by Daniel Stenberg](https://daniel.haxx.se/) 번역 [참여](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
   - (*2019~*) Google Project Zero 문서 2개 번역 중
   - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
   - (*2019~*) Bug Bounties and Mental Health 번역 중
   - (*2019~*) How to Learn Penetration Testing: A Beginners Tutorial 번역 중
 
-## Business
+## Experience
 
-- **(주)안스포츠**
-  - (*2014.06~2014.08*) Employee (*Part-Time*)
-  - 온라인 쇼핑몰 웹 관리
-  - 물류 관리
-  - 컴퓨터 유지 보수
+- **IBM Security**
+  - (*2019.08*) Threat Monitoring Analyst (*Part-Time*)
+  - 보안 관제 (*침해시도 모니터링 및 1차 분석, 전파, 대응*)
+  - 보안 솔루션/시스템 관리 및 신규 보안 취약점에 대한 현황 분석
+  - 금융보안원 레드팀 주관 하 DDoS 모의 훈련 수행
+    - SSDP + ACK Flooding
+    - Memcached + Fragment Flooding
+    - TCP Connection Flooding + RUDY
 
 - **EMPO**
   - (*2017.01~2018.12*) Security Engineer/CISO
   - (*2019.01~2019.05*) Security Engineer
   - 기술 R&D 및 운영 보안, 서버 개발 지원
   - 소스 코드 보안성 검토
+
+- **(주)안스포츠**
+  - (*2014.06~2014.08*) Employee (*Part-Time*)
+  - 온라인 쇼핑몰 웹 관리
+  - 물류 관리
+  - 컴퓨터 유지 보수
 
 ## Leadership & Activities
 
