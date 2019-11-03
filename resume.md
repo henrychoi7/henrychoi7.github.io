@@ -11,6 +11,8 @@ sidebar_link: true
 
 <!-- ![Profile image](https://raw.githubusercontent.com/henrychoi7/henrychoi7.github.io/master/img/profile.jpg) -->
 
+---
+
 ## Education & Military Service
 
 - **분당고등학교 (Bundang High School)**
@@ -57,6 +59,8 @@ sidebar_link: true
     - (*2014~2016*) 육군 3군단 CERT 복무 및 병장 만기 전역
     - PC, 네트워크 장비 취약점 점검, 분석 및 사이버 침해사고대응 임무 수행
 
+---
+
 ## Work & Project
 
 - **수상 이력 (Honor & Awards)**
@@ -94,11 +98,12 @@ sidebar_link: true
     - (*2019*) [Character removal issue in any type of text input when converting Korean to Chinese](https://bugs.chromium.org/p/chromium/issues/detail?id=1011786)
 
 - **프로젝트 (Projects)**
-  - (*2017*) 개발다봐 - 모바일 (Android) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/henrychoi7/DevLooks)
-  - (*2017*) 로또빌리지 - 모바일 (Android), 웹 기반 복권번호 추천 및 Reward 서비스 [개발](https://github.com/henrychoi7/LottoVillage)
-  - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [진행](https://handongchoi.com/2017/10/28/install-elk/)
-  - (*2018*) CalendarLog - SNS형 캘린더 서비스 [개발](https://github.com/henrychoi7/CalendarLog-Server)
-  - (*2018*) DSP Decompiler 개발 및 연구 프로젝트 (NDA)
+  - (*2017*) 모바일 (Android) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [GitHub](https://github.com/henrychoi7/DevLooks)
+  - (*2017*) 모바일 (Android), 웹 기반 복권번호 추천 및 Reward 서비스 [GitHub](https://github.com/henrychoi7/LottoVillage)
+  - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [포스팅](https://handongchoi.com/2017/10/28/install-elk/)
+  - (*2018*) 블루투스 취약점 (BlueBorne) 분석 PoC 및 White paper 번역 [GitHub](https://github.com/henrychoi7/Bluepwn)
+  - (*2018*) 모바일 (iOS) 기반 SNS형 캘린더 서비스 [GitHub](https://github.com/henrychoi7/CalendarLog-Server)
+  - (*2018*) DSP 명령어 구조분석을 통한 디컴파일러 구현에 관한 연구 (NDA)
 
 - **번역 (Technical Korean Translations)**
   - (*2017*) OWASP Top 10 - 2017 한글 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
@@ -113,6 +118,8 @@ sidebar_link: true
   - (*2019~*) [uftrace](https://github.com/namhyung/uftrace)
     - (*2019*) 공개SW 컨트리뷰톤 멘티 참여 [GitHub](https://github.com/kosslab-kr/uftrace/issues/92)
 
+---
+
 ## Experience
 
 - **IBM Korea**
@@ -124,6 +131,8 @@ sidebar_link: true
 
 - **(주)안스포츠**
   - (*2014.06~2014.08*) Employee (Part-time)
+
+---
 
 ## Leadership & Activities
 
@@ -145,6 +154,8 @@ sidebar_link: true
 
 - **K-Shield Jr. (케이쉴드 주니어)**
   - (*2019*) K-Shield Jr. 서포터즈 1기
+
+---
 
 ## Skills & Certification
 
