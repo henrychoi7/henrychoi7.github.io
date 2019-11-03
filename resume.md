@@ -90,6 +90,7 @@ title: Resume
     - (*2019*) [Korean character break-up issue on a third party search engine on the search bar shortcut.](https://bugs.chromium.org/p/chromium/issues/detail?id=922843)
     - (*2019*) [[User Feedback - Beta] Reports of Hangul characters being deleted during input in M75](https://bugs.chromium.org/p/chromium/issues/detail?id=966148)
     - (*2019*) [Unable to change keyboard input to Korean from English or special characters in iOS Chrome Remote Desktop](https://bugs.chromium.org/p/chromium/issues/detail?id=991885)
+    - (*2019*) [Character removal issue in any type of text input when converting Korean to Chinese](https://bugs.chromium.org/p/chromium/issues/detail?id=1011786)
 
 - **프로젝트 (Projects)**
   - (*2017*) 개발다봐 - 모바일 (*Android*) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [개발](https://github.com/jung2929/devlooks_android)
@@ -100,12 +101,15 @@ title: Resume
 
 - **번역 (Technical Korean Translations)**
   - (*2017*) OWASP Top 10 Project - OWASP Top 10 2017 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~2019*) Let's Encrypt 웹사이트 번역 참여 및 [PR](https://github.com/letsencrypt/website/pull/595)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [참여](https://cafe.naver.com/securityplus/27540)
   - (*2019*) HTTP/3 Explained [by Daniel Stenberg](https://daniel.haxx.se/) 번역 [참여](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
   - (*2019~*) Google Project Zero 문서 2개 번역 중
   - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
   - (*2019~*) Bug Bounties and Mental Health 번역 중
   - (*2019~*) How to Learn Penetration Testing: A Beginners Tutorial 번역 중
+
+- **오픈 소스 기여 (OSS Contributions)**
+  - (*2019*) [uftrace](https://github.com/namhyung/uftrace)
 
 ## Experience
 
