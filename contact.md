@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+sidebar_link: true
 ---
 
 블로그 외 기타 문의사항 또는 저와 개인적으로 연락이 필요하시다면 아래 연락처를 이용해 주세요.
