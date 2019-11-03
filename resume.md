@@ -100,7 +100,7 @@ sidebar_link: true
 - **프로젝트 (Projects)**
   - (*2017*) 모바일 (Android) 기반 개발 관련 웹사이트 추천 및 사용자화 서비스 [GitHub](https://github.com/henrychoi7/DevLooks)
   - (*2017*) 모바일 (Android), 웹 기반 복권번호 추천 및 Reward 서비스 [GitHub](https://github.com/henrychoi7/LottoVillage)
-  - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [포스팅](https://handongchoi.com/2017/10/28/install-elk/)
+  - (*2017*) CentOS와 ELK Stack을 활용한 XSS 및 SQL Injection 탐지 프로젝트 [포스팅](https://handongchoi.com/2017/10/28/install-elk.html)
   - (*2018*) 블루투스 취약점 (BlueBorne) 분석 PoC 및 White paper 번역 [GitHub](https://github.com/henrychoi7/Bluepwn)
   - (*2018*) 모바일 (iOS) 기반 SNS형 캘린더 서비스 [GitHub](https://github.com/henrychoi7/CalendarLog-Server)
   - (*2018*) DSP 명령어 구조분석을 통한 디컴파일러 구현에 관한 연구 (NDA)
