@@ -74,6 +74,7 @@ sidebar_link: true
   - (*2018*) 가천미래프로젝트 - 창의융합설계 경진대회 **최우수상 (가천대학교총장상)**
   - (*2018*) 가천대학교 정보보호 동아리 Pay1oad - KUCIS 프로젝트 부문 **최우수상**
   - (*2018*) K-Shield Jr. 정보보호 관리진단 교육 과정 1기 우수 정보보호 취업인재 **선정 및 인증**
+  - (*2019*) 공개SW 컨트리뷰톤 - uftrace **대상 (과학기술정보통신부장관상)**
 
 - **발표 & 논문 (Presentation & Research)**
   - (*2013*) '사이버공격 - 당신과 조직을 어떻게 위협하는가?' 발표
@@ -106,11 +107,11 @@ sidebar_link: true
   - (*2018*) DSP 명령어 구조분석을 통한 디컴파일러 구현에 관한 연구 (NDA)
 
 - **번역 (Technical Korean Translations)**
-  - (*2017*) OWASP Top 10 - 2017 한글 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
-  - (*2018~2019*) Let's Encrypt 웹사이트 한글 번역 [기사](https://cafe.naver.com/securityplus/27540) [GitHub](https://github.com/letsencrypt/website/issues?utf8=%E2%9C%93&q=involves%3Ahenrychoi7+)
-  - (*2019*) HTTP/3 Explained [by Daniel Stenberg](https://daniel.haxx.se/) 번역 [GitHub](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
+  - (*2017*) OWASP Top 10 - 2017 번역 [참여](https://www.owasp.org/index.php?title=Category:OWASP_Top_Ten_Project#tab=Translation_Efforts_2)
+  - (*2018~2019*) Let's Encrypt 웹사이트 번역 [기사](https://cafe.naver.com/securityplus/27540) [GitHub](https://github.com/letsencrypt/website/issues?utf8=%E2%9C%93&q=involves%3Ahenrychoi7+)
+  - (*2019*) HTTP/3 Explained 번역 참여 [GitHub](https://github.com/bagder/http3-explained/pulls?utf8=%E2%9C%93&q=is%3Aclosed+is%3Apr+author%3Ahenrychoi7+)
   - (*2019~*) Google Project Zero 문서 2개 번역 중
-  - (*2019~*) Developing Secure Android Apps (*December 2018*) 번역 중
+  - (*2019~*) Developing Secure Android Apps (December 2018) 번역 중
   - (*2019~*) Bug Bounties and Mental Health 번역 중
   - (*2019~*) How to Learn Penetration Testing: A Beginners Tutorial 번역 중
 
