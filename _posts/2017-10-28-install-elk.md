@@ -5,11 +5,11 @@ title: CentOS 7에 ELK, Filebeat, AWStats 설치 후 웹 로그 및 쉘 명령�
 
 휴 드디어 중간고사가 끝났다. 다시 포스팅을 진행하자.
 
-오늘은 CentOS 7에 ELK(*Elasticsearch + Logstash + Kibana*) Stack을 설치하겠다. 워드프레스(*WordPress*)는 전 세계에서 가장 많이 사용하는 CMS 기반 웹사이트 플랫폼이다. 그래서 워드프레스에서 사용하는 각종 테마와 플러그인 때문에 에러가 쉽게 발생하고, 해킹 공격의 대상이 되기도 한다.
+오늘은 CentOS 7에 ELK(Elasticsearch + Logstash + Kibana) Stack을 설치하겠다. 워드프레스(WordPress)는 전 세계에서 가장 많이 사용하는 CMS 기반 웹사이트 플랫폼이다. 그래서 워드프레스에서 사용하는 각종 테마와 플러그인 때문에 에러가 쉽게 발생하고, 해킹 공격의 대상이 되기도 한다.
 
 웹 관리자는 보안 위협을 탐지하기 위한 로그 모니터링 시스템을 구축해야 하며, 큰 기업에서는 주로 ELK Stack을 사용하여 실시간 로그 모니터링을 구현한다. 그리고 시스템 관리자 권한 획득 등 내부 침투가 발생하는 경우를 대비하여 .bash_history 내용을 ELK로 전달해서 중요 Command List를 확인할 수 있도록 하는 것이 좋다.
 
-이 플랫폼이 구축된다면 최종적으로 SQL Injection(*id, passwd 로그 및 HTTP Request 중 GET, POST, HEAD 등 로그 확인*) 탐지, 홈페이지 로그 및 쉘 명령어(*.bash_history 로그*) 분석, Kibana를 이용한 Command History 분석 후 해킹 관련 Command 발생 알람까지 확인할 수 있다.
+이 플랫폼이 구축된다면 최종적으로 SQL Injection(id, passwd 로그 및 HTTP Request 중 GET, POST, HEAD 등 로그 확인) 탐지, 홈페이지 로그 및 쉘 명령어(.bash_history 로그) 분석, Kibana를 이용한 Command History 분석 후 해킹 관련 Command 발생 알람까지 확인할 수 있다.
 
 ## ELK, Filebeat, AWStats란?
 
@@ -25,7 +25,7 @@ title: CentOS 7에 ELK, Filebeat, AWStats 설치 후 웹 로그 및 쉘 명령�
 
 ## 설치 과정
 
-우선 JDK를 설치한다(*JDK를 설치하지 않았을 경우 진행*).
+우선 JDK를 설치한다(JDK를 설치하지 않았을 경우 진행).
 
 `$sudo yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel`
 
@@ -55,7 +55,7 @@ $source /etc/profile
   width="80%">
 </p>
 
-그리고, 서버에서 bash_history(*syslog에 기록*), Apache httpd 로그를 설정한다(*로그를 기록하도록 설정했으면 할 필요 없음*). bash_history 같은 경우는 logger를 통해 syslog에 기록할 수 있도록 지정했다.
+그리고, 서버에서 bash_history(syslog에 기록), Apache httpd 로그를 설정한다(로그를 기록하도록 설정했으면 할 필요 없음). bash_history 같은 경우는 logger를 통해 syslog에 기록할 수 있도록 지정했다.
 
 ```bash
 $sudo vim /etc/profile.d/cmd.sh
@@ -97,7 +97,7 @@ local7.notice    /var/log/bash_history
   width="80%">
 </p>
 
-이제 사용자의 명령어가 .bash_history 파일에 기록된다. 그리고 Apache httpd 로그를 설정하자. 웹에서 데이터를 보낼 때, GET에는 URL로 데이터의 정보가 대략적으로 표시되고, POST는 패킷 Body에 담아져서 데이터가 보이지 않는다. 그래서 Apache(*v2.4.29 기준*)는 기본적으로 POST 방식으로 데이터를 전송할 때 Body 내용을 로그로 남길 수 있도록 Apache의 모듈 [mod_dumpio](https://httpd.apache.org/docs/2.4/mod/mod_dumpio.html) 또는 [mod_dumpost](https://github.com/danghvu/mod_dumpost)를 사용한다. 이 모듈은 따로 설치할 필요없이 간단하게 파일만 수정하면 사용할 수 있다(*여기서는 서버에 SSL을 적용했기 때문에 ssl.conf를 수정했다. 만약에 SSL을 사용하지 않는다면 httpd.conf를 수정하면 된다*).
+이제 사용자의 명령어가 .bash_history 파일에 기록된다. 그리고 Apache httpd 로그를 설정하자. 웹에서 데이터를 보낼 때, GET에는 URL로 데이터의 정보가 대략적으로 표시되고, POST는 패킷 Body에 담아져서 데이터가 보이지 않는다. 그래서 Apache(v2.4.29 기준)는 기본적으로 POST 방식으로 데이터를 전송할 때 Body 내용을 로그로 남길 수 있도록 Apache의 모듈 [mod_dumpio](https://httpd.apache.org/docs/2.4/mod/mod_dumpio.html) 또는 [mod_dumpost](https://github.com/danghvu/mod_dumpost)를 사용한다. 이 모듈은 따로 설치할 필요없이 간단하게 파일만 수정하면 사용할 수 있다(여기서는 서버에 SSL을 적용했기 때문에 ssl.conf를 수정했다. 만약에 SSL을 사용하지 않는다면 httpd.conf를 수정하면 된다).
 
 <p align="center">
   <img
@@ -203,7 +203,7 @@ $sudo yum -y install kibana
   width="80%">
 </p>
 
-Kibana를 설치했으면 Host(*호스트*), Name(*이름*), SSL(*해도 되고 안 해도 됨*)을 설정한다. SSL 설정을 했을 경우 SSL 인증서의 권한도 같이 수정해야 한다. 만약에 시스템에서 방화벽을 사용하면 포트 설정도 추가한다.
+Kibana를 설치했으면 Host(호스트), Name(이름), SSL(해도 되고 안 해도 됨)을 설정한다. SSL 설정을 했을 경우 SSL 인증서의 권한도 같이 수정해야 한다. 만약에 시스템에서 방화벽을 사용하면 포트 설정도 추가한다.
 
 ```bash
 $sudo vim /etc/kibana/kibana.yml
@@ -275,7 +275,7 @@ output.logstash:
   hosts: ["127.0.0.1:5044"]
 ```
 
-그리고, Filebeat로 보내진 로그를 Elasticsearch로 보내는 설정을 한다. 참고로 Filebeat 외 다른 beat(*Metricbeat, Packetbeat, Heartbeat, Winlogbeat 등*)에서 보낸 로그를 포함하여 이를 모두 Logstash에서 직접 로그를 보낼 수 있다.
+그리고, Filebeat로 보내진 로그를 Elasticsearch로 보내는 설정을 한다. 참고로 Filebeat 외 다른 beat(Metricbeat, Packetbeat, Heartbeat, Winlogbeat 등)에서 보낸 로그를 포함하여 이를 모두 Logstash에서 직접 로그를 보낼 수 있다.
 
 ```bash
 $sudo vim /etc/logstash/conf.d/filebeat.conf
@@ -306,7 +306,7 @@ systemctl restart kibana
 systemctl restart filebeat
 ```
 
-혹시 서비스 시작 도중 시스템이 느려지면 RAM 4GB 이상 설정한다. 이제 `http://127.0.0.1:5601`에 접속하면 Kibana가 정상적으로 실행된다. 처음에 Index Pattern이 없다고 나온다. 그러면 `curl localhost:9200/_cat/indices?v` 명령어를 실행해서 Elasticsearch에 저장된 Index Pattern을 확인하고 Kibana에 추가하면 된다(*여기서는 filebeat-*로 추가했다. Index Pattern은 추후 원하는 대로 수정 가능하므로 참고할 것*). 이제 Dashboard 혹은 Discover 메뉴에서 보고 싶은 로그를 필터링하여 볼 수 있다.
+혹시 서비스 시작 도중 시스템이 느려지면 RAM 4GB 이상 설정한다. 이제 `http://127.0.0.1:5601`에 접속하면 Kibana가 정상적으로 실행된다. 처음에 Index Pattern이 없다고 나온다. 그러면 `curl localhost:9200/_cat/indices?v` 명령어를 실행해서 Elasticsearch에 저장된 Index Pattern을 확인하고 Kibana에 추가하면 된다(여기서는 filebeat-\*로 추가했다. Index Pattern은 추후 원하는 대로 수정 가능하므로 참고할 것). 이제 Dashboard 혹은 Discover 메뉴에서 보고 싶은 로그를 필터링하여 볼 수 있다.
 
 <p align="center">
   <img
@@ -356,7 +356,7 @@ systemctl restart filebeat
 
 `$sudo /usr/share/awstats/tools/awstats_configure.pl`
 
-위 파일을 열어서 도메인 이름과 config 파일의 경로를 지정한다(*여기서는 도메인 이름으로 gachon.com을 사용했다*). 그리고, 마지막으로 config 파일을 수정한다.
+위 파일을 열어서 도메인 이름과 config 파일의 경로를 지정한다(여기서는 도메인 이름으로 gachon.com을 사용했다). 그리고, 마지막으로 config 파일을 수정한다.
 
 ```bash
 # config 파일 수정(여기서는 gachon.com으로 사용함)

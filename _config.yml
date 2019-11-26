@@ -5,7 +5,8 @@ highlighter:      rouge
 # Setup
 title:            Handong
 tagline:          'Blog'
-description:      '<a href="https://handongchoi.com/resume/" target="_blank">촨동</a>의 블로그'
+# description:      '<a href="https://handongchoi.com/resume/" target="_blank">촨동</a>의 블로그'
+description:      '촨동의 블로그'
 url:              https://handongchoi.com
 baseurl:          '/'
 # baseurl:          '/hydeout'

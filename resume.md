@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-sidebar_link: true
+sidebar_link: false
 ---
 
 <!-- 
@@ -51,7 +51,7 @@ sidebar_link: true
     - Python을 이용한 데이터마이닝과 인공지능 TensorFlow 교육
 
 - **K-Shield Jr. (케이쉴드 주니어)**
-  - (*2018*) 정보보호 관리진단 교육 과정 1기 과정
+  - (*2018*) 정보보호 관리진단 교육 1기 과정
 
 - **대한민국 육군 (Republic of Korea Army)**
   - 전문특기병 제 79회차 정보보호기술병

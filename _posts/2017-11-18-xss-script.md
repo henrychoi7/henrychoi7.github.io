@@ -3,7 +3,7 @@ layout: post
 title: XSS(Cross-site Scripting) 공격에 대하여
 ---
 
-오늘은 XSS(*Cross-site Scripting*)에 대해 알아보자.
+오늘은 XSS(Cross-site Scripting)에 대해 알아보자.
 
 ## XSS란?
 
@@ -36,7 +36,7 @@ XSS 공격을 막으려면 웹 페이지 입력 폼에서 올바른 유효성 �
 <img srcset=",,,,,x" onerror="alert(1)">
 ```
 
-### 따옴표(*Quotes*), 세미콜론(*Semicolon*)이 없는 경우
+### 따옴표(Quotes), 세미콜론(Semicolon)이 없는 경우
 ```html
 <IMG SRC=javascript:alert('XSS')>
 <IMG SRC=javascript:alert(&quot;XSS&quot;)>
@@ -99,7 +99,7 @@ div:target {width: 200px;}
 <div style="overflow:-webkit-marquee" onscroll="alert(1)"></div>
 ```
 
-나중에 기회가 된다면 sqlmap같은 도구를 XSS 취약점 점검 도구 버전으로 개발해보고 싶다. xssmap? 사실 사람들이 개인적으로 만든 퍼저(*Fuzzer*)들이 많지만, 플랫폼 또는 언어를 통합할 수 있다면 좋을 것 같다.
+나중에 기회가 된다면 sqlmap같은 도구를 XSS 취약점 점검 도구 버전으로 개발해보고 싶다. xssmap? 사실 사람들이 개인적으로 만든 퍼저(Fuzzer)들이 많지만, 플랫폼 또는 언어를 통합할 수 있다면 좋을 것 같다.
 
 [참고자료]
 - http://www.smeegesec.com/2012/06/collection-of-cross-site-scripting-xss.html
