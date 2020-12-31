@@ -5,7 +5,7 @@ template = "about.html"
 +++
 
 <p style="text-align:center;">
-    <img src="pages/profile.png" width="80%">
+    <img src="profile.png" width="80%">
 </p>
 
 안녕하세요? Henry입니다.
