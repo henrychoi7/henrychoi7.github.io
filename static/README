@@ -1,0 +1,1 @@
+Contains any kind of file. All the files/directories in the static directory will be copied as-is to the output directory.
