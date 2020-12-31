@@ -1,0 +1,9 @@
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/getzola/even.git
+[submodule "themes/feather"]
+	path = themes/feather
+	url = https://github.com/U9H/feather.git
+[submodule "themes/after-dark"]
+	path = themes/after-dark
+	url = https://github.com/getzola/after-dark.git
