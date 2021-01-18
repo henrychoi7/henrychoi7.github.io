@@ -36,8 +36,6 @@ disqus_shortname = "handongchoi"
 
 author = "Handong Choi"
 
-katex_enable = true
-
 # This is the default menu
 blog_menu = [
     {url = "$BASE_URL", name = "Home"},
