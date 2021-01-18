@@ -107,11 +107,11 @@ katex_enable = true
 ```
 
 After enabling this extension, the `katex` short code can be used in documents:
-
+<!-- 
 - `{{ katex(body="\KaTeX") }}` to typeset a math formula inlined into a text,
   similar to `$...$` in LaTeX
-<!-- - `{% katex(block=true) %}\KaTeX{% end %}` to typeset a block of math formulas, -->
-  similar to `$$...$$` in LaTeX
+- `{% katex(block=true) %}\KaTeX{% end %}` to typeset a block of math formulas,
+  similar to `$$...$$` in LaTeX -->
 
 #### Automatic rendering without short codes
 
