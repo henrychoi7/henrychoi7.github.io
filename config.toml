@@ -18,7 +18,7 @@ build_search_index = false
 # The site theme to use.
 theme = "xyblag"
 
-title = "Henry Choi"
+title = "Henry"
 description = "Loves searching, learning things. Life in security."
 
 generate_feed = true
