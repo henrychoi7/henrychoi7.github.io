@@ -1,0 +1,61 @@
+main .hero {
+  .logo a {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 3rem;
+
+    @include underline-static;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    width: 500px;
+  }
+
+  margin: 5rem 0;
+
+  @include sm {
+    margin: 3rem 0;
+  }
+}
+
+.index-list {
+  .post-block {
+    header {
+      margin: inherit;
+    }
+    .post {
+      &__header {
+        margin: 5rem 0;
+        .post_link_header {
+          display: block;
+          img {
+            display: block;
+            width: 50%;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+
+            @include sm {
+              width: 100%;
+            }
+          }
+          &:hover {
+            h1 {
+              @include underline-static;
+            }
+          }
+        }
+        p {
+          color: var(--text-color);
+          margin: 0 0 0.5rem;
+        }
+      }
+      &__title {
+        font-size: 3rem;
+        @include underline-from-center;
+      }
+    }
+  }
+}

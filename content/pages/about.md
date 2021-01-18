@@ -4,9 +4,9 @@ path = "about"
 template = "about.html"
 +++
 
-<p style="text-align:center;">
+<!-- <p style="text-align:center;">
     <img src="profile.png" width="80%">
-</p>
+</p> -->
 
 안녕하세요? Henry입니다.
 

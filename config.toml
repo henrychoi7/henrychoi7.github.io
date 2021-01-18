@@ -10,13 +10,18 @@ highlight_code = true
 
 # The theme to use for code highlighting.
 # See below for list of allowed values.
-# highlight_theme = "material-dark"
+highlight_theme = "material-dark"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
 # The site theme to use.
-theme = "after-dark"
+theme = "xyblag"
+
+title = "Henry Choi"
+description = "Loves searching, learning things. Life in security."
+
+generate_feed = true
 
 taxonomies = [
     # You can enable/disable RSS
@@ -25,32 +30,22 @@ taxonomies = [
 ]
 
 [extra]
-# Put all your custom variables here
+
+# Disqus shortname for comments by disqus, when not set comment section isn't displayed
+disqus_shortname = "handongchoi"
 
 author = "Handong Choi"
 
 # This is the default menu
-after_dark_menu = [
+blog_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/tags", name = "Tags"},
     {url = "$BASE_URL/about", name = "About"},
 ]
 
-after_dark_title = "Henry's Blog"
-
-# specify an image for the big header at the top of the page.
-# this will be a background cover image, so make it large enough
-# so that it won't upscale enough to pixelate
-# feather_header_image = "/theme_images/default.gif"
-
-# if you want comments, add your disqus embed code here.  
-# you can obtain a code on the disqus website.
-# feather_disqus_code = "<div id='disqus_thread'></div><script> var disqus_config = ... etc ... etc ..."
-
-# if you'd like people to be able to donate to you, you can include a donate link
-# to be displayed in the footer of the website.
-# feather_donate_link = "https://paypal.me/piedoomy"
-
-# if you want analytics, add your tracking code HTML here.
-# feather_analytics = "<script async src='https://www.googletagmanager.com/gtag/... etc ... etc ..."
+[extra.social_links]
+twitter = "https://twitter.com/h3nrychoi"
+github = "https://github.com/henrychoi7"
+# behance = "https://behance.net/xypnox"
+# telegram = "https://t.me/h3nrychoi"

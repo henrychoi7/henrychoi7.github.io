@@ -1,14 +1,12 @@
 +++
 title = "AWS? 이제는 GCP!"
+description = "저는 학생 때 클라우드하면 보통 AWS (Amazon Web Services)를 생각했습니다."
 date = 2020-02-02
+
 [taxonomies]
 categories = ["Infra"]
 tags = ["aws", "gcp"]
 +++
-
-저는 학생 때 클라우드하면 보통 AWS (Amazon Web Services)를 생각했습니다.
-
-<!-- more -->
 
 AWS Educate 라는 웹사이트에서 공부도 하고, 나중에 시간을 내서 자격증도 한 번 따볼까 생각했는데, 프로젝트를 하면 실제로 깊게 사용해 볼 기회가 없었습니다. 제 경험상 개발과 관련된 과제를 풀거나 시험을 준비하면 더욱더 그랬습니다. 물론 그동안 간단하게 사용했던 서비스는 EC2, Route53, RDS, S3, CloudWatch, Inspector 등이 있지만, 서비스를 사용하는 것과 공부하는 것은 전혀 다르다고 생각합니다.
 
