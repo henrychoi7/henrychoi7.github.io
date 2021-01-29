@@ -9,7 +9,7 @@ $light-text: #cccccc;
   --secondary-text-color: #{lighten($light-text, 10%)};
   --tag-hover-color: #{#34495e};
   --post-heading-color: #{lighten($light-text, 10%)};
-  --code-color: #{lightn($light-text, 10%)};
+  --code-color: #{lighten($light-text, 10%)};
   --code-back-color: #{#1a1d2c};
   --code-block-color: #{#c9d2dc};
   --light-accent-color: #{rgba($light-text, 0.2)};
