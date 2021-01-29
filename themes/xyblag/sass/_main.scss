@@ -304,17 +304,17 @@ main {
     }
   }
 
-  #disqus_thread iframe {
-    opacity: 0.75;
+  // #disqus_thread iframe {
+  //   opacity: 0.75;
 
-    transition: 0.5s opacity ease-in-out;
+  //   transition: 0.5s opacity ease-in-out;
 
-    &:active,
-    &:focus,
-    &:hover {
-      opacity: 1;
-    }
-  }
+  //   &:active,
+  //   &:focus,
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
 }
 
 .end-post {
