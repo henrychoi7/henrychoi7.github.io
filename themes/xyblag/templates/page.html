@@ -94,6 +94,14 @@
                     </div>
                 {% endif %}
                 {{ post_macros::disqus(page=page, config=config) }}
+                <script src="https://utteranc.es/client.js"
+                        repo="henrychoi7/henrychoi7.github.io"
+                        issue-term="pathname"
+                        label="💬comment"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
             {% endblock page_footer %}
         </div>
         {% block page_after_footer %}{% endblock page_after_footer %}
