@@ -1,3 +1,3 @@
 # Blog
 
-Henry's Blog
+Hi! My name is Henry.
