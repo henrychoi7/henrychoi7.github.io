@@ -32,7 +32,7 @@ taxonomies = [
 [extra]
 
 # Disqus shortname for comments by disqus, when not set comment section isn't displayed
-disqus_shortname = "handongchoi"
+# disqus_shortname = "handongchoi"
 
 author = "Handong Choi"
 

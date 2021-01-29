@@ -118,8 +118,8 @@ template = "about.html"
 - [User Feedback - Beta] Reports of Hangul characters being deleted during input in M75 [[Issue](https://bugs.chromium.org/p/chromium/issues/detail?id=966148)] (2019)
 - Korean character break-up issue on a third party search engine on the search bar shortcut [[Issue](https://bugs.chromium.org/p/chromium/issues/detail?id=922843)] (2019)
 
-**IoTcube**
->제보에 대한 내용은 [링크](https://www.slideshare.net/secret/1xD69pGcFYDHgM)에 있습니다.
+**IoTcube**\
+_제보에 대한 모든 내용은 [링크](https://www.slideshare.net/secret/1xD69pGcFYDHgM)에 있습니다._
 - Out-of-bounds read/Invalid pointer reference in [[FFmpeg](https://github.com/FFmpeg/FFmpeg)] (CVE-2011-3893, CVE-2016-1897)
 - Buffer overflow/Uncontrolled format string in [[SpiderMonkey](https://developer.mozilla.org/ko/docs/SpiderMonkey)] (CVE-2016-1879)
 - Out-of-bounds read/Invalid pointer reference  in [[The Sleuth Kit(TSK)](https://github.com/sleuthkit/sleuthkit)] (CVE-2012-1571, CVE-2014-3710)

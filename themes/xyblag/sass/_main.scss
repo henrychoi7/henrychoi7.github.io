@@ -26,7 +26,7 @@ main {
   .about,
   .post {
     padding: 1.5rem 0;
-    font-size: 24px;
+    font-size: 17px;
 
     @include sm {
       font-size: 20px;
@@ -228,7 +228,7 @@ main {
 
     &__title {
       margin: 0;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 0.5rem !important;
     }
