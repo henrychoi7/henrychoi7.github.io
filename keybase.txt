@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/handongchoi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://handongchoi.com
+  * I am handongchoi (https://keybase.io/handongchoi) on keybase.
+  * I have a public key with fingerprint F320 04D1 3809 E5E3 F692  BD79 4D97 8E1B 7582 6DDF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012025e6bf7dde12ff3ab722f3bd3bc46961e5fc23af00a2c72efb1593a2090a5b670a",
+      "fingerprint": "f32004d13809e5e3f692bd794d978e1b75826ddf",
+      "host": "keybase.io",
+      "key_id": "4d978e1b75826ddf",
+      "kid": "01015df2e46096480c8962d0852c480d5886f3e853331fa7ea7961784b0aa3b93ebd0a",
+      "uid": "c80f0c5e85a0a46c48f1da3b6cd7fa19",
+      "username": "handongchoi"
+    },
+    "merkle_root": {
+      "ctime": 1610990825,
+      "hash_meta": "6c6984b7818a731df09b3020dd4b1ad7b9ce3e902800dfb894d9ec6e61943721",
+      "seqno": 18820939
+    },
+    "revoke": {
+      "sig_ids": [
+        "16de15bc673e85cd71c46c6f96a8d61f8264a2e51f0833aea1371943cb752f030f"
+      ]
+    },
+    "service": {
+      "hostname": "handongchoi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1610990825,
+  "expire_in": 157680000,
+  "prev": "ebf9b9a713c8c84b15cad30ba41476d22115a6e32e84d54de2aea3b7560aaf3c",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMP2AnicbZN7bBVFFMbbAm3aRChekJdNdREVWuvszO7sbhsbija8FERBQJDb2Z2Z
+dml797J3b59WRLS8nwGKkpSGRxogIoZWKqJCpfioWGlSkFpaw1PBoAQCPhp1tpH4
+h/y1md3vfOc7vzN7/L5+MUmxz9WsHRV9o7gntrW5KhqTN+D4T5WS6dByKbNSKmR9
+D1ZEWcQLFtpUypSADAFUGTa5RimTIeeImBqEHJkUmZaCDSwzlVsQEQ4AgZYGGTdl
+1UAEAgMQ1cQaIFK6xO1QPnPDrh3yhC1HEACFykgHBlMZ4tiAJtUMhRqazmRTU3WI
+KeWisMCJ+BUinEkiLMN2xDtxCPbFu4f+bm4gq5RDpmBgYEUHlm5gSIGuQkucqKrr
+mCOmqwghmRONEU1MoumKCQhBpoGYSftyR/vsLB1wYKlCTwBRsLDgMhU6bFGNE9nw
+hRHmhkgxE+oCEqJOKN8qcGypKl0qZm5hEQu6juP5fC3P9lUyloFhAB2qYkYSKQgW
+M4+IYmxhQ8TQdFknGpIpB4aJAASUKqZMqGYaFkPMAFAHgHJT95kxCzMsGwrSoCyi
+RNiikCM66LrYATJEBJeVOIXM7x6x8wW6iJQ5T5Kx2KhqWljzQYhJZLFPC3MDE51i
+mQukCoFMlTnQESKMyEjzm1gCN+QAAS69UuV3c0tsq8/c39X/GWRYTrFIFXYdz7Gc
+Iv+j54UjmT4brzzsq0uZGfzXJ2jaISoui6goYW7EdkJiEqG8BzZWFrZdFrR9haph
+AQQAvw8rEZbM5IZpEE1Glm4JoLJqEYqASRRZ0TCFUJZVghmCTFeoqlAGxYRIjIbF
+DeDI+o8jEqYeyReeAl6IeFGXSVXNx+b3j4lNiokfEOf/RTFJicl3/61gW3JM05hn
++LhNdVHCmnMm8LejI259f3HD3ku01xw5vmXmWm9Pd31GeyOd/VZ9acqsspJfF3UN
+qUhBCfYPF273Xlw4f/SkI5cbe7xVr/9+5KHNnyQfhAtfnPNBhZa9Y2XiroohV1ZI
+NQdrz9ZX/5LePnDud3nL62suV7VOp0unfTzlQFzTsXO537x/enHC+IaOGxNy41tB
+4brtu76dfPLCgBGJOSnFlY+22xX9jZnNdnPN2r1Xszo+Ckzd9+O6YeHXDlXeX76F
+3jw5L7Vu6Pptt9oUtaln7oy6jRV8zeONj3T+MbPnw4TqGS15c4zZamcKXJ0+5VJa
+dtfhzP2xDRf/nHq0e4lZAmPjmpdN2zo8qJMWY3BXmrvcG7s9tbt34JnbkZcP9Abi
+0/KONux4YvKJL5PBuKU5vSu7HzgTGLWorfPrx0aHZ7nXqlK73oUrnr8d23G6bfCD
++cPom7Xuwc2BnK2f48yhgwZNDPSr7MiIa7rWmBi8o/x16uYd5eaWoQlLk3b+HR11
+5UZWbWVBxpP71jR5BzZN6992PrB8ydhXa09MLC2yxl2vH745++GOky2tRaYycvJL
+1T9vO1eWu2DO7o3vrS8NXD/lbjmxsufYqtnxuSOk9gV51eXn3ayjo6OX7YGrU8v2
+7M9quHrW+uqz3U9vOPtpzQu/1X2RfWj4GOmdZRsW30rbltZ5pjMmWznyrDd952E1
+pegp6R+Ujf+x
+=kTtd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/handongchoi
+
+==================================================================

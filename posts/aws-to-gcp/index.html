@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta
+        content="text/html; charset=utf-8" http-equiv="content-type"/> <!-- Enable responsiveness on mobile devices-->
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+        <title>
+            
+    Henry - AWS? 이제는 GCP!
+
+        </title>
+        <link href="https:&#x2F;&#x2F;handongchoi.com&#x2F;favicon.ico" rel="icon" type="image/x-icon"/>
+        
+            <link rel="alternate" type= "application/atom+xml"  title="RSS" href="https://handongchoi.com/atom.xml"/>
+        
+        
+        
+    <meta content="website" property="og:type"/>
+    <meta content="Henry" property="og:site_name"/>
+    <meta content="https://handongchoi.com/posts/aws-to-gcp/" property="og:url"/>
+    <meta content="https://handongchoi.com/posts/aws-to-gcp/" property="twitter:url"/>
+    
+        <meta content="AWS? 이제는 GCP!" property="og:title"/>
+        <meta content="AWS? 이제는 GCP!" property="twitter:title"/>
+    
+    
+        <meta content="저는 학생 때 클라우드하면 보통 AWS (Amazon Web Services)를 생각했습니다." property="description"/>
+        <meta content="저는 학생 때 클라우드하면 보통 AWS (Amazon Web Services)를 생각했습니다." property="og:description"/>
+        <meta content="저는 학생 때 클라우드하면 보통 AWS (Amazon Web Services)를 생각했습니다." property="twitter:description"/>
+    
+    
+        <meta content="summary_large_image" property="twitter:card"/>
+        <meta content="https://handongchoi.com/images/cover.png" property="og:image"/>
+        <meta content="https://handongchoi.com/images/cover.png" property="twitter:image"/>
+    
+
+        
+        
+            <script src="https:&#x2F;&#x2F;handongchoi.com&#x2F;slideout.min.js" type="text/javascript"></script>
+            
+        
+        
+            <link href="https:&#x2F;&#x2F;handongchoi.com&#x2F;site.css" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+            <link charset="utf-8" href="https://indestructibletype.com/fonts/Jost.css" rel="stylesheet" type="text/css"/>
+            
+        
+        
+        <script type="text/javascript" src="https://t.mentioned.app/track/track.js" id="mentioned-by-script" token="KwwcsfsfMdFtGdn9Gp0Q2sxAdHc0sKrblbYkTQpfr3mZ6-rFpDorr0FL1nRcrXJ1WUE" host="handongchoi.com"></script>
+    </head>
+    <body>
+        <script>
+            (function initTheme() {
+                let body = document.getElementsByTagName("body")[0];
+                if (window.localStorage.getItem("theme") !== null) {
+                    if (window.localStorage.getItem("theme") === "dark") {
+                        body.setAttribute("data-theme", "dark");
+                    } else {
+                        body.setAttribute("data-theme", "light");
+                    }
+                } else {
+                    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                        body.setAttribute("data-theme", "dark");
+                    }
+                }
+            })();
+        </script>
+        <div class="container">
+            <div class="mobile-navbar" id="mobile-navbar">
+                <div class="mobile-header-logo">
+                    <a class="logo" href="https:&#x2F;&#x2F;handongchoi.com">Henry</a>
+                </div>
+                <div class="mobile-navbar-icon icon-out">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="mobile-menu slideout-menu slideout-menu-left" id="mobile-menu">
+                <ul class="mobile-menu-list">
+                    
+                        <li class="mobile-menu-item">
+                            <a href="https:&#x2F;&#x2F;handongchoi.com">
+                                Home
+                            </a>
+                        </li>
+                    
+                        <li class="mobile-menu-item">
+                            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;categories">
+                                Categories
+                            </a>
+                        </li>
+                    
+                        <li class="mobile-menu-item">
+                            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;tags">
+                                Tags
+                            </a>
+                        </li>
+                    
+                        <li class="mobile-menu-item">
+                            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;about">
+                                About
+                            </a>
+                        </li>
+                    
+                    <li class="mobile-menu-item">
+                        <div class="theme-switcher">
+                            
+    <div class="theme-button" onClick="toggleTheme()">
+        <label for="cb1">
+            <svg
+                id="dayIcon"
+                style="enable-background:new 0 0 35 35;"
+                version="1.1"
+                viewBox="0 0 35 35"
+                x="0px"
+                xml:space="preserve"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px">
+                <g id="Sun">
+                    <g>
+                        <path
+                            d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5 S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z
+                                M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5
+                                C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6
+                                C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9
+                                c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44
+                                l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5
+                                c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06 L6.439,8.561z
+                                M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z
+                                M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2
+                                C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29
+                                c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7
+                                C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5
+                                c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"
+                            style="fill-rule:evenodd;clip-rule:evenodd;"/>
+                    </g>
+                </g>
+            </svg>
+        </label>
+        <input class="toggle" id="cb1" onClick="toggleTheme()" type="checkbox"/>
+        <label class="toggle-button" for="cb1"></label>
+        <label for="cb1">
+            <svg
+                enable-background="new 0 0 100 100"
+                id="nightIcon"
+                version="1.1"
+                viewBox="0 0 100 100"
+                x="0px"
+                xml:space="preserve"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px">
+                <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571
+                C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23
+                c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369
+                c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65 c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"/>
+            </svg>
+        </label>
+    </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+                
+    <header id="header">
+        <div class="logo">
+            <a href="https:&#x2F;&#x2F;handongchoi.com">Henry</a>
+        </div>
+        
+    <nav class="menu">
+        <ul>
+            
+                <li>
+                    <a href="https:&#x2F;&#x2F;handongchoi.com">
+                        Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;categories">
+                        Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;about">
+                        About
+                    </a>
+                </li>
+            
+            <div class="theme-switcher">
+                
+    <div class="theme-button" onClick="toggleTheme()">
+        <label for="cb1">
+            <svg
+                id="dayIcon"
+                style="enable-background:new 0 0 35 35;"
+                version="1.1"
+                viewBox="0 0 35 35"
+                x="0px"
+                xml:space="preserve"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px">
+                <g id="Sun">
+                    <g>
+                        <path
+                            d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5 S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z
+                                M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5
+                                C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6
+                                C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9
+                                c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44
+                                l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5
+                                c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06 L6.439,8.561z
+                                M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z
+                                M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2
+                                C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29
+                                c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7
+                                C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5
+                                c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"
+                            style="fill-rule:evenodd;clip-rule:evenodd;"/>
+                    </g>
+                </g>
+            </svg>
+        </label>
+        <input class="toggle" id="cb1" onClick="toggleTheme()" type="checkbox"/>
+        <label class="toggle-button" for="cb1"></label>
+        <label for="cb1">
+            <svg
+                enable-background="new 0 0 100 100"
+                id="nightIcon"
+                version="1.1"
+                viewBox="0 0 100 100"
+                x="0px"
+                xml:space="preserve"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px">
+                <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571
+                C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23
+                c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369
+                c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65 c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"/>
+            </svg>
+        </label>
+    </div>
+
+            </div>
+        </ul>
+    </nav>
+
+    </header>
+
+            
+            <main>
+                <div class="content" id="mobile-panel"> 
+    
+    <article class="post">
+        
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;posts&#x2F;aws-to-gcp&#x2F;">AWS? 이제는 GCP!</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2020-02-02</span>
+            
+                <div class="post__category">
+                    
+                        <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;categories&#x2F;infra&#x2F;">Infra</a>
+                    
+                </div>
+            
+        </div>
+    </header>
+
+        <div class="post-content">
+            <p>AWS Educate 라는 웹사이트에서 공부도 하고, 나중에 시간을 내서 자격증도 한 번 따볼까 생각했는데, 프로젝트를 하면 실제로 깊게 사용해 볼 기회가 없었습니다. 제 경험상 개발과 관련된 과제를 풀거나 시험을 준비하면 더욱더 그랬습니다. 물론 그동안 간단하게 사용했던 서비스는 EC2, Route53, RDS, S3, CloudWatch, Inspector 등이 있지만, 서비스를 사용하는 것과 공부하는 것은 전혀 다르다고 생각합니다.</p>
+<p style="text-align:center;">
+    <img src="aws.png" width="80%">
+</p>
+<p>게임으로 예를 들면, 보통 게임을 좋아하는 사람은 많아도 잘하는 사람은 좋아하는 사람만큼 있지 않습니다. 못해도 좋아하는 데 지장이 없으니까요! <del>저 또한 마찬가지입니다</del></p>
+<p>한 번은 작년, GDG Campus Korea 주최 <a href="https://festa.io/events/654">DevFest on Campus 2019</a> 라는 행사에 다녀왔습니다. 지인의 발표를 보러 갔는데 역시나 학생들이 정말 많았는데, 여기에 모인 학생들 또한 제가 학교 다닐 때 AWS를 썼던 것처럼 공부한 수준이 모두 비슷해 보였습니다. 그래도 클라우드에 관심은 많겠죠? 시간이 흐르고 저는 이 행사의 마지막 세션을 들었는데, 굉장히 재밌게 들었습니다. 바로 GCP에 관한 발표였습니다.</p>
+<p style="text-align:center;"><iframe src="//www.slideshare.net/slideshow/embed_code/key/cTTQgX1zYea2J9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
+<p>제가 들은 발표에 관심있는 분들은 위 슬라이드를 참고하면 되겠습니다.</p>
+<p>저는 그동안 GCP를 알고는 있었는데 잘 몰랐어요. 그러다가 작년에 서울 리전을 만들겠다고 발표한 내용 덕분에 조금씩 관심을 가졌습니다. Cloud Functions, Compute Engine, Cloud Storage, Cloud APIs를 써보긴 했지만, 저도 위의 발표자 분처럼 자격증을 준비하며 클라우드가 정확하게 어떤 서비스고, 왜 생겨났는지 역사부터 시작해서 공부하고 싶었습니다. 솔직히 AWS 하나로는 부족했습니다. 결국 작년 말의 결심이 2020년 새해부터 본격적으로 GCP를 공부하게 된 계기가 되었죠. 정확히는 1월 2일!</p>
+<p style="text-align:center;">
+    <img src="gcp.png" width="80%">
+</p>
+<p>위 스터디 잼도 예전부터 알고 있었는데 시간내기 쉽지 않았습니다ㅠㅠ</p>
+<p>무엇보다 운 좋게 구글 스터디 잼에 참여하게 되어 동기부여가 확실하게 되었습니다. 새해 목표를 GCP 자격증 따기로 잡은 이후 지금도 공부하는 사람들과 슬랙으로 소통하고, 퀵랩에서 실습하고, 구글 클라우드의 공식 강의를 코세라에서 수강하는 중입니다. 회사를 다니면서 시간을 쪼개서 틈틈이 공부하고 있지만, 회사가 워낙 바빠서 이거도 쉽지 않군요. 그래서 지하철에서 코세라 앱을 켤 때도 있습니다. 그러던 중 다행히 오프라인으로 실습을 진행할 수 있는 기회도 있어서 이에 참석했습니다.</p>
+<p style="text-align:center;">
+    <img src="qwiklabs.png" width="80%">
+</p>
+<p>궁금하신 분들을 위해 세미나에서 들었던 내용을 간략하게 알려드립니다.</p>
+<p>첫 번째 세션은 자격증에 관한 설명이라 패스. 두 번째 세션에서는 autoscaling (자동 확장)이라는 개념이 나옵니다. 이건 AWS provisioning, Auto Scaling과 비슷합니다. Autoscaling은 예측하기 어려운 수요에 대한 고가용성 제공, 트래픽 처리 원활 그리고 비용 절감 효과를 가져옵니다. 쉽게 말하면 네트워크나 애플리케이션 단에서 load balancing을 구현하는 것과 비슷한 개념인데, 대표적으로 웹 서버 Nginx가 그런 역할을 수행할 수 있죠. 클라우드 내 서비스도 그런 역할이 필요합니다. 그리고, 세 번째 세션에서는 서버리스 컨테이너 기반 서비스를 만들면서 Cloud Build (빌드), Cloud Run (배포), Cloud Pub/Sub (이벤트 알림), Cloud Storage (이벤트 처리) 등 GCP의 여러 가지 서비스를 활용합니다. 이 세션이 진짜 제대로 클라우드를 공부하는 첫걸음(?)이라고 볼 수 있습니다. 여기에서는 내가 JavaScript로 작성한 애플리케이션을 빌드하고, 배포된 상태에서 어떤 파일이 올라오면 이벤트 알림이 발생하여, 해당 파일을 PDF 파일로 변환하는 예제를 살펴보았습니다. GCP에는 정말 서비스가 많아서 실제로 개발할 때 잘 활용하면 더 효율적이고 안정적인 서비스 구축이 가능합니다. <del>사실 세미나 때 제 계정이 막히는 등 이런저런 일이 있었지만 잘 해결됐습니다</del></p>
+<p>GCP 스터디를 진행하면서 매주마다 작은 퀴즈를 풀고 퀵랩 퀘스트를 완료한 인증샷을 제출하고, 코세라 강의를 수료하면 이름이 적힌 수료증이 나오는데, 공부를 할 때는 특히 성과 (결과)가 눈에 보이게 해야 한다고 생각이 듭니다. 블로그를 운영하거나 발표를 하거나, 자격증을 따는 일도 결과적으로 자신의 눈에 보이는 일입니다. 이것들이 하나씩 쌓여서 나중에 더 큰 결과를 가져오지 않을까요. 제가 회사를 다니면서도 많이 느낍니다. 회사를 다녀도 자기가 배운 걸 기록하지 않으면 그게 기억이 잘 안 나더군요. 그래서 저는 퇴근을 정시에 못해도 적을 건 적고 집에 갑니다. <del>머리가 나쁘면 퇴근이 늦습니다</del></p>
+<p>클라우드라는 개념 자체는 나온지 오래됐고, 관련 서비스도 출시한지 오래지만 아직 클라우드 전문가를 주변에서 많이 보지 못했습니다. 학생 때도 느낀 건데 정보 습득 기회의 부족 때문일 수도 있고, 교육의 다양성 부족 또한 문제라고 생각이 듭니다. 제가 클라우드를 더 깊이 공부해서 나중에 주변 사람들에게 알릴 수 있는 기회가 생기면 기분 좋을 것 같습니다. 저 또한 개발을 공부하다 보안을 공부하다 클라우드를 공부할 줄은 몰랐는데, 역시 공부는 물어보는 것보다 직접 해보면서 느껴야 하고, 여기에는 정해진 길이 없다는 마음을 가지고 해야 합니다.</p>
+<p>클라우드를 처음 접할 때는 AWS, 이제는 GCP를 공부하니까 전반적인 DevOps에 관심이 계속 생깁니다. DevOps 말하니까 생각났는데, Docker와 Kubernetes도 이제 꽤 유명하죠? 학생 때는 제대로 몰랐던 이 두 가지가 이제 왜 그렇게 주목을 받고 편리하다고 말하는 건지 GCP를 공부하면서 이해가 갑니다. 공부하면서 배운 내용을 동시에 적을 시간이 별로 없어서 이건 나중에 따로 포스팅하겠습니다. 제가 수강하고 있는 강의는 이 <a href="https://www.coursera.org/professional-certificates/cloud-engineering-gcp">링크</a>를 참고하세요!</p>
+
+        </div>
+        
+        <!-- <div
+            class="end-post">
+        </div> -->
+        <div class="post-footer">
+            
+                
+                    <div class="post-tags">
+                        
+                            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;tags&#x2F;aws&#x2F;">
+                                <span class="hashtag">#</span>
+                                aws</a>
+                        
+                            <a href="https:&#x2F;&#x2F;handongchoi.com&#x2F;tags&#x2F;gcp&#x2F;">
+                                <span class="hashtag">#</span>
+                                gcp</a>
+                        
+                    </div>
+                
+                
+                    <div class="post-nav">
+                        
+                            <a class="previous" href="https:&#x2F;&#x2F;handongchoi.com&#x2F;posts&#x2F;ubuntu-apache-compile-install&#x2F;">‹ Ubuntu 18.04에서 Apache HTTP 컴파일 후 설치하기</a>
+                        
+                        
+                        
+                        
+                    </div>
+                
+                <!-- 
+    
+ -->
+                <script src="https://utteranc.es/client.js"
+                        repo="henrychoi7/henrychoi7.github.io"
+                        issue-term="pathname"
+                        label="💬comment"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            
+        </div>
+        
+    </article>
+
+                    
+    <footer>
+        <div class="social_links">
+            
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;h3nrychoi">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+            
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;henrychoi7">
+                    <svg
+                        class="feather feather-github"
+                        fill="none"
+                        height="24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7
+                            0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+            
+            
+            
+        </div>
+        <div class="theme_info">
+            <div class="copyright">
+                &#169;<script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Handong Choi
+            </div>
+            <!-- <div class="made-with">
+                Made with
+                <a href="https://www.getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a>,
+                <a href="https://github.com/xypnox/blag/tree/master/themes/xyblag" rel="noopener noreferrer" target="_blank">Theme</a>
+                by
+                <a href="https://www.xypnox.com/" rel="noopener noreferrer" target="_blank">xypnox</a>.
+            </div> -->
+        </div>
+    </footer>
+
+                </div>
+            </main>
+        </div>
+        
+            <script src="https:&#x2F;&#x2F;handongchoi.com&#x2F;main.js" type="text/javascript"></script>
+        
+    </body>
+</html>
